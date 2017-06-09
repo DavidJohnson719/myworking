@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "E95413491EE8398E00C27291"
+               BlueprintIdentifier = "E9DDF64E1EEAC9C70088E268"
                BuildableName = "Mataam.app"
                BlueprintName = "Mataam"
                ReferencedContainer = "container:Mataam.xcodeproj">
@@ -32,7 +32,7 @@
             skipped = "NO">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "E95413601EE8398E00C27291"
+               BlueprintIdentifier = "E9DDF6651EEAC9C70088E268"
                BuildableName = "MataamTests.xctest"
                BlueprintName = "MataamTests"
                ReferencedContainer = "container:Mataam.xcodeproj">
@@ -42,7 +42,7 @@
             skipped = "NO">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "E954136B1EE8398E00C27291"
+               BlueprintIdentifier = "E9DDF6701EEAC9C70088E268"
                BuildableName = "MataamUITests.xctest"
                BlueprintName = "MataamUITests"
                ReferencedContainer = "container:Mataam.xcodeproj">
@@ -52,7 +52,7 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "E95413491EE8398E00C27291"
+            BlueprintIdentifier = "E9DDF64E1EEAC9C70088E268"
             BuildableName = "Mataam.app"
             BlueprintName = "Mataam"
             ReferencedContainer = "container:Mataam.xcodeproj">
@@ -75,7 +75,7 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "E95413491EE8398E00C27291"
+            BlueprintIdentifier = "E9DDF64E1EEAC9C70088E268"
             BuildableName = "Mataam.app"
             BlueprintName = "Mataam"
             ReferencedContainer = "container:Mataam.xcodeproj">
@@ -94,7 +94,7 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "E95413491EE8398E00C27291"
+            BlueprintIdentifier = "E9DDF64E1EEAC9C70088E268"
             BuildableName = "Mataam.app"
             BlueprintName = "Mataam"
             ReferencedContainer = "container:Mataam.xcodeproj">

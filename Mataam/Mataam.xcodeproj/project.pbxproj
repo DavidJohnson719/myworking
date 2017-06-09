@@ -7,110 +7,120 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		E954134E1EE8398E00C27291 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E954134D1EE8398E00C27291 /* AppDelegate.swift */; };
-		E95413501EE8398E00C27291 /* ADViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E954134F1EE8398E00C27291 /* ADViewController.swift */; };
-		E95413531EE8398E00C27291 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E95413511EE8398E00C27291 /* Main.storyboard */; };
-		E95413561EE8398E00C27291 /* Mataam.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = E95413541EE8398E00C27291 /* Mataam.xcdatamodeld */; };
-		E95413581EE8398E00C27291 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E95413571EE8398E00C27291 /* Assets.xcassets */; };
-		E954135B1EE8398E00C27291 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E95413591EE8398E00C27291 /* LaunchScreen.storyboard */; };
-		E95413661EE8398E00C27291 /* MataamTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E95413651EE8398E00C27291 /* MataamTests.swift */; };
-		E95413711EE8398E00C27291 /* MataamUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E95413701EE8398E00C27291 /* MataamUITests.swift */; };
-		E9DDF5CB1EE9D7130088E268 /* Splashbackground.png in Resources */ = {isa = PBXBuildFile; fileRef = E9DDF5C21EE9D7130088E268 /* Splashbackground.png */; };
-		E9DDF5CC1EE9D7130088E268 /* Splashbackground@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E9DDF5C31EE9D7130088E268 /* Splashbackground@2x.png */; };
-		E9DDF5CD1EE9D7130088E268 /* Splashbackground@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = E9DDF5C41EE9D7130088E268 /* Splashbackground@3x.png */; };
-		E9DDF5CE1EE9D7130088E268 /* LogoName.png in Resources */ = {isa = PBXBuildFile; fileRef = E9DDF5C51EE9D7130088E268 /* LogoName.png */; };
-		E9DDF5CF1EE9D7130088E268 /* LogoName@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E9DDF5C61EE9D7130088E268 /* LogoName@2x.png */; };
-		E9DDF5D01EE9D7130088E268 /* LogoName@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = E9DDF5C71EE9D7130088E268 /* LogoName@3x.png */; };
-		E9DDF5D11EE9D7130088E268 /* LoginBackground.png in Resources */ = {isa = PBXBuildFile; fileRef = E9DDF5C81EE9D7130088E268 /* LoginBackground.png */; };
-		E9DDF5D21EE9D7130088E268 /* LoginBackground@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E9DDF5C91EE9D7130088E268 /* LoginBackground@2x.png */; };
-		E9DDF5D31EE9D7130088E268 /* LoginBackground@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = E9DDF5CA1EE9D7130088E268 /* LoginBackground@3x.png */; };
-		E9DDF5D51EE9E88C0088E268 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9DDF5D41EE9E88C0088E268 /* LoginViewController.swift */; };
-		E9DDF5DC1EE9EC050088E268 /* CheckBtn-Pressed.png in Resources */ = {isa = PBXBuildFile; fileRef = E9DDF5D61EE9EC050088E268 /* CheckBtn-Pressed.png */; };
-		E9DDF5DD1EE9EC050088E268 /* CheckBtn-Pressed@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E9DDF5D71EE9EC050088E268 /* CheckBtn-Pressed@2x.png */; };
-		E9DDF5DE1EE9EC050088E268 /* CheckBtn-Pressed@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = E9DDF5D81EE9EC050088E268 /* CheckBtn-Pressed@3x.png */; };
-		E9DDF5DF1EE9EC050088E268 /* Register.png in Resources */ = {isa = PBXBuildFile; fileRef = E9DDF5D91EE9EC050088E268 /* Register.png */; };
-		E9DDF5E01EE9EC050088E268 /* Register@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E9DDF5DA1EE9EC050088E268 /* Register@2x.png */; };
-		E9DDF5E11EE9EC050088E268 /* Register@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = E9DDF5DB1EE9EC050088E268 /* Register@3x.png */; };
-		E9DDF5E51EE9EC680088E268 /* empty.png in Resources */ = {isa = PBXBuildFile; fileRef = E9DDF5E21EE9EC680088E268 /* empty.png */; };
-		E9DDF5E61EE9EC680088E268 /* empty@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E9DDF5E31EE9EC680088E268 /* empty@2x.png */; };
-		E9DDF5E71EE9EC680088E268 /* empty@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = E9DDF5E41EE9EC680088E268 /* empty@3x.png */; };
-		E9DDF5EB1EE9F4050088E268 /* LoginButton.png in Resources */ = {isa = PBXBuildFile; fileRef = E9DDF5E81EE9F4050088E268 /* LoginButton.png */; };
-		E9DDF5EC1EE9F4050088E268 /* LoginButton@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E9DDF5E91EE9F4050088E268 /* LoginButton@2x.png */; };
-		E9DDF5ED1EE9F4050088E268 /* LoginButton@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = E9DDF5EA1EE9F4050088E268 /* LoginButton@3x.png */; };
+		E9DDF6531EEAC9C70088E268 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9DDF6521EEAC9C70088E268 /* AppDelegate.swift */; };
+		E9DDF6581EEAC9C70088E268 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E9DDF6561EEAC9C70088E268 /* Main.storyboard */; };
+		E9DDF65B1EEAC9C70088E268 /* Mataam.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = E9DDF6591EEAC9C70088E268 /* Mataam.xcdatamodeld */; };
+		E9DDF65D1EEAC9C70088E268 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E9DDF65C1EEAC9C70088E268 /* Assets.xcassets */; };
+		E9DDF6601EEAC9C70088E268 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E9DDF65E1EEAC9C70088E268 /* LaunchScreen.storyboard */; };
+		E9DDF66B1EEAC9C70088E268 /* MataamTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9DDF66A1EEAC9C70088E268 /* MataamTests.swift */; };
+		E9DDF6761EEAC9C70088E268 /* MataamUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9DDF6751EEAC9C70088E268 /* MataamUITests.swift */; };
+		E9DDF69D1EEACA560088E268 /* CheckBtn-Pressed.png in Resources */ = {isa = PBXBuildFile; fileRef = E9DDF6881EEACA560088E268 /* CheckBtn-Pressed.png */; };
+		E9DDF69E1EEACA560088E268 /* CheckBtn-Pressed@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E9DDF6891EEACA560088E268 /* CheckBtn-Pressed@2x.png */; };
+		E9DDF69F1EEACA560088E268 /* CheckBtn-Pressed@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = E9DDF68A1EEACA560088E268 /* CheckBtn-Pressed@3x.png */; };
+		E9DDF6A01EEACA560088E268 /* empty.png in Resources */ = {isa = PBXBuildFile; fileRef = E9DDF68B1EEACA560088E268 /* empty.png */; };
+		E9DDF6A11EEACA560088E268 /* empty@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E9DDF68C1EEACA560088E268 /* empty@2x.png */; };
+		E9DDF6A21EEACA560088E268 /* empty@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = E9DDF68D1EEACA560088E268 /* empty@3x.png */; };
+		E9DDF6A31EEACA560088E268 /* LoginBackground.png in Resources */ = {isa = PBXBuildFile; fileRef = E9DDF68E1EEACA560088E268 /* LoginBackground.png */; };
+		E9DDF6A41EEACA560088E268 /* LoginBackground@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E9DDF68F1EEACA560088E268 /* LoginBackground@2x.png */; };
+		E9DDF6A51EEACA560088E268 /* LoginBackground@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = E9DDF6901EEACA560088E268 /* LoginBackground@3x.png */; };
+		E9DDF6A61EEACA560088E268 /* LoginButton.png in Resources */ = {isa = PBXBuildFile; fileRef = E9DDF6911EEACA560088E268 /* LoginButton.png */; };
+		E9DDF6A71EEACA560088E268 /* LoginButton@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E9DDF6921EEACA560088E268 /* LoginButton@2x.png */; };
+		E9DDF6A81EEACA560088E268 /* LoginButton@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = E9DDF6931EEACA560088E268 /* LoginButton@3x.png */; };
+		E9DDF6A91EEACA560088E268 /* LogoName.png in Resources */ = {isa = PBXBuildFile; fileRef = E9DDF6941EEACA560088E268 /* LogoName.png */; };
+		E9DDF6AA1EEACA560088E268 /* LogoName@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E9DDF6951EEACA560088E268 /* LogoName@2x.png */; };
+		E9DDF6AB1EEACA560088E268 /* LogoName@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = E9DDF6961EEACA560088E268 /* LogoName@3x.png */; };
+		E9DDF6AC1EEACA560088E268 /* Register.png in Resources */ = {isa = PBXBuildFile; fileRef = E9DDF6971EEACA560088E268 /* Register.png */; };
+		E9DDF6AD1EEACA560088E268 /* Register@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E9DDF6981EEACA560088E268 /* Register@2x.png */; };
+		E9DDF6AE1EEACA560088E268 /* Register@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = E9DDF6991EEACA560088E268 /* Register@3x.png */; };
+		E9DDF6AF1EEACA560088E268 /* Splashbackground.png in Resources */ = {isa = PBXBuildFile; fileRef = E9DDF69A1EEACA560088E268 /* Splashbackground.png */; };
+		E9DDF6B01EEACA560088E268 /* Splashbackground@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E9DDF69B1EEACA560088E268 /* Splashbackground@2x.png */; };
+		E9DDF6B11EEACA560088E268 /* Splashbackground@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = E9DDF69C1EEACA560088E268 /* Splashbackground@3x.png */; };
+		E9DDF6B31EEACA9A0088E268 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9DDF6B21EEACA9A0088E268 /* LoginViewController.swift */; };
+		E9DDF6B51EEACAAC0088E268 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9DDF6B41EEACAAC0088E268 /* RegisterViewController.swift */; };
+		E9DDF6B91EEACB390088E268 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9DDF6B81EEACB390088E268 /* MainViewController.swift */; };
+		E9DDF6F81EEADDC80088E268 /* AdViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9DDF6F71EEADDC80088E268 /* AdViewController.swift */; };
+		E9DDF6FC1EEB010E0088E268 /* back-nav.png in Resources */ = {isa = PBXBuildFile; fileRef = E9DDF6F91EEB010E0088E268 /* back-nav.png */; };
+		E9DDF6FD1EEB010E0088E268 /* back-nav@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E9DDF6FA1EEB010E0088E268 /* back-nav@2x.png */; };
+		E9DDF6FE1EEB010E0088E268 /* back-nav@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = E9DDF6FB1EEB010E0088E268 /* back-nav@3x.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		E95413621EE8398E00C27291 /* PBXContainerItemProxy */ = {
+		E9DDF6671EEAC9C70088E268 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = E95413421EE8398D00C27291 /* Project object */;
+			containerPortal = E9DDF6471EEAC9C70088E268 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = E95413491EE8398E00C27291;
+			remoteGlobalIDString = E9DDF64E1EEAC9C70088E268;
 			remoteInfo = Mataam;
 		};
-		E954136D1EE8398E00C27291 /* PBXContainerItemProxy */ = {
+		E9DDF6721EEAC9C70088E268 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = E95413421EE8398D00C27291 /* Project object */;
+			containerPortal = E9DDF6471EEAC9C70088E268 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = E95413491EE8398E00C27291;
+			remoteGlobalIDString = E9DDF64E1EEAC9C70088E268;
 			remoteInfo = Mataam;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		E954134A1EE8398E00C27291 /* Mataam.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Mataam.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		E954134D1EE8398E00C27291 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		E954134F1EE8398E00C27291 /* ADViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ADViewController.swift; sourceTree = "<group>"; };
-		E95413521EE8398E00C27291 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		E95413551EE8398E00C27291 /* Mataam.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Mataam.xcdatamodel; sourceTree = "<group>"; };
-		E95413571EE8398E00C27291 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		E954135A1EE8398E00C27291 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		E954135C1EE8398E00C27291 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		E95413611EE8398E00C27291 /* MataamTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MataamTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		E95413651EE8398E00C27291 /* MataamTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MataamTests.swift; sourceTree = "<group>"; };
-		E95413671EE8398E00C27291 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		E954136C1EE8398E00C27291 /* MataamUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MataamUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		E95413701EE8398E00C27291 /* MataamUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MataamUITests.swift; sourceTree = "<group>"; };
-		E95413721EE8398E00C27291 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		E9DDF5C21EE9D7130088E268 /* Splashbackground.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Splashbackground.png; sourceTree = "<group>"; };
-		E9DDF5C31EE9D7130088E268 /* Splashbackground@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Splashbackground@2x.png"; sourceTree = "<group>"; };
-		E9DDF5C41EE9D7130088E268 /* Splashbackground@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Splashbackground@3x.png"; sourceTree = "<group>"; };
-		E9DDF5C51EE9D7130088E268 /* LogoName.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = LogoName.png; sourceTree = "<group>"; };
-		E9DDF5C61EE9D7130088E268 /* LogoName@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "LogoName@2x.png"; sourceTree = "<group>"; };
-		E9DDF5C71EE9D7130088E268 /* LogoName@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "LogoName@3x.png"; sourceTree = "<group>"; };
-		E9DDF5C81EE9D7130088E268 /* LoginBackground.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = LoginBackground.png; sourceTree = "<group>"; };
-		E9DDF5C91EE9D7130088E268 /* LoginBackground@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "LoginBackground@2x.png"; sourceTree = "<group>"; };
-		E9DDF5CA1EE9D7130088E268 /* LoginBackground@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "LoginBackground@3x.png"; sourceTree = "<group>"; };
-		E9DDF5D41EE9E88C0088E268 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
-		E9DDF5D61EE9EC050088E268 /* CheckBtn-Pressed.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "CheckBtn-Pressed.png"; sourceTree = "<group>"; };
-		E9DDF5D71EE9EC050088E268 /* CheckBtn-Pressed@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "CheckBtn-Pressed@2x.png"; sourceTree = "<group>"; };
-		E9DDF5D81EE9EC050088E268 /* CheckBtn-Pressed@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "CheckBtn-Pressed@3x.png"; sourceTree = "<group>"; };
-		E9DDF5D91EE9EC050088E268 /* Register.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Register.png; sourceTree = "<group>"; };
-		E9DDF5DA1EE9EC050088E268 /* Register@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Register@2x.png"; sourceTree = "<group>"; };
-		E9DDF5DB1EE9EC050088E268 /* Register@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Register@3x.png"; sourceTree = "<group>"; };
-		E9DDF5E21EE9EC680088E268 /* empty.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = empty.png; sourceTree = "<group>"; };
-		E9DDF5E31EE9EC680088E268 /* empty@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "empty@2x.png"; sourceTree = "<group>"; };
-		E9DDF5E41EE9EC680088E268 /* empty@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "empty@3x.png"; sourceTree = "<group>"; };
-		E9DDF5E81EE9F4050088E268 /* LoginButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = LoginButton.png; sourceTree = "<group>"; };
-		E9DDF5E91EE9F4050088E268 /* LoginButton@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "LoginButton@2x.png"; sourceTree = "<group>"; };
-		E9DDF5EA1EE9F4050088E268 /* LoginButton@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "LoginButton@3x.png"; sourceTree = "<group>"; };
+		E9DDF64F1EEAC9C70088E268 /* Mataam.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Mataam.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E9DDF6521EEAC9C70088E268 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		E9DDF6571EEAC9C70088E268 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		E9DDF65A1EEAC9C70088E268 /* Mataam.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Mataam.xcdatamodel; sourceTree = "<group>"; };
+		E9DDF65C1EEAC9C70088E268 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		E9DDF65F1EEAC9C70088E268 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		E9DDF6611EEAC9C70088E268 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E9DDF6661EEAC9C70088E268 /* MataamTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MataamTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		E9DDF66A1EEAC9C70088E268 /* MataamTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MataamTests.swift; sourceTree = "<group>"; };
+		E9DDF66C1EEAC9C70088E268 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E9DDF6711EEAC9C70088E268 /* MataamUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MataamUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		E9DDF6751EEAC9C70088E268 /* MataamUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MataamUITests.swift; sourceTree = "<group>"; };
+		E9DDF6771EEAC9C70088E268 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E9DDF6881EEACA560088E268 /* CheckBtn-Pressed.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "CheckBtn-Pressed.png"; sourceTree = "<group>"; };
+		E9DDF6891EEACA560088E268 /* CheckBtn-Pressed@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "CheckBtn-Pressed@2x.png"; sourceTree = "<group>"; };
+		E9DDF68A1EEACA560088E268 /* CheckBtn-Pressed@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "CheckBtn-Pressed@3x.png"; sourceTree = "<group>"; };
+		E9DDF68B1EEACA560088E268 /* empty.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = empty.png; sourceTree = "<group>"; };
+		E9DDF68C1EEACA560088E268 /* empty@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "empty@2x.png"; sourceTree = "<group>"; };
+		E9DDF68D1EEACA560088E268 /* empty@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "empty@3x.png"; sourceTree = "<group>"; };
+		E9DDF68E1EEACA560088E268 /* LoginBackground.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = LoginBackground.png; sourceTree = "<group>"; };
+		E9DDF68F1EEACA560088E268 /* LoginBackground@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "LoginBackground@2x.png"; sourceTree = "<group>"; };
+		E9DDF6901EEACA560088E268 /* LoginBackground@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "LoginBackground@3x.png"; sourceTree = "<group>"; };
+		E9DDF6911EEACA560088E268 /* LoginButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = LoginButton.png; sourceTree = "<group>"; };
+		E9DDF6921EEACA560088E268 /* LoginButton@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "LoginButton@2x.png"; sourceTree = "<group>"; };
+		E9DDF6931EEACA560088E268 /* LoginButton@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "LoginButton@3x.png"; sourceTree = "<group>"; };
+		E9DDF6941EEACA560088E268 /* LogoName.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = LogoName.png; sourceTree = "<group>"; };
+		E9DDF6951EEACA560088E268 /* LogoName@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "LogoName@2x.png"; sourceTree = "<group>"; };
+		E9DDF6961EEACA560088E268 /* LogoName@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "LogoName@3x.png"; sourceTree = "<group>"; };
+		E9DDF6971EEACA560088E268 /* Register.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Register.png; sourceTree = "<group>"; };
+		E9DDF6981EEACA560088E268 /* Register@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Register@2x.png"; sourceTree = "<group>"; };
+		E9DDF6991EEACA560088E268 /* Register@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Register@3x.png"; sourceTree = "<group>"; };
+		E9DDF69A1EEACA560088E268 /* Splashbackground.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Splashbackground.png; sourceTree = "<group>"; };
+		E9DDF69B1EEACA560088E268 /* Splashbackground@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Splashbackground@2x.png"; sourceTree = "<group>"; };
+		E9DDF69C1EEACA560088E268 /* Splashbackground@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Splashbackground@3x.png"; sourceTree = "<group>"; };
+		E9DDF6B21EEACA9A0088E268 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		E9DDF6B41EEACAAC0088E268 /* RegisterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
+		E9DDF6B81EEACB390088E268 /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		E9DDF6F71EEADDC80088E268 /* AdViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AdViewController.swift; sourceTree = "<group>"; };
+		E9DDF6F91EEB010E0088E268 /* back-nav.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "back-nav.png"; sourceTree = "<group>"; };
+		E9DDF6FA1EEB010E0088E268 /* back-nav@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "back-nav@2x.png"; sourceTree = "<group>"; };
+		E9DDF6FB1EEB010E0088E268 /* back-nav@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "back-nav@3x.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		E95413471EE8398E00C27291 /* Frameworks */ = {
+		E9DDF64C1EEAC9C70088E268 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		E954135E1EE8398E00C27291 /* Frameworks */ = {
+		E9DDF6631EEAC9C70088E268 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		E95413691EE8398E00C27291 /* Frameworks */ = {
+		E9DDF66E1EEAC9C70088E268 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -120,106 +130,135 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		E95413411EE8398D00C27291 = {
+		E9DDF6461EEAC9C70088E268 = {
 			isa = PBXGroup;
 			children = (
-				E954134C1EE8398E00C27291 /* Mataam */,
-				E95413641EE8398E00C27291 /* MataamTests */,
-				E954136F1EE8398E00C27291 /* MataamUITests */,
-				E954134B1EE8398E00C27291 /* Products */,
+				E9DDF6511EEAC9C70088E268 /* Mataam */,
+				E9DDF6691EEAC9C70088E268 /* MataamTests */,
+				E9DDF6741EEAC9C70088E268 /* MataamUITests */,
+				E9DDF6501EEAC9C70088E268 /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		E954134B1EE8398E00C27291 /* Products */ = {
+		E9DDF6501EEAC9C70088E268 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				E954134A1EE8398E00C27291 /* Mataam.app */,
-				E95413611EE8398E00C27291 /* MataamTests.xctest */,
-				E954136C1EE8398E00C27291 /* MataamUITests.xctest */,
+				E9DDF64F1EEAC9C70088E268 /* Mataam.app */,
+				E9DDF6661EEAC9C70088E268 /* MataamTests.xctest */,
+				E9DDF6711EEAC9C70088E268 /* MataamUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		E954134C1EE8398E00C27291 /* Mataam */ = {
+		E9DDF6511EEAC9C70088E268 /* Mataam */ = {
 			isa = PBXGroup;
 			children = (
-				E9DDF5A31EE9CC680088E268 /* ViewControllers */,
-				E95413871EE8CC0F00C27291 /* Assets */,
-				E954134D1EE8398E00C27291 /* AppDelegate.swift */,
-				E95413511EE8398E00C27291 /* Main.storyboard */,
-				E95413571EE8398E00C27291 /* Assets.xcassets */,
-				E95413591EE8398E00C27291 /* LaunchScreen.storyboard */,
-				E954135C1EE8398E00C27291 /* Info.plist */,
-				E95413541EE8398E00C27291 /* Mataam.xcdatamodeld */,
+				E9DDF6871EEACA1B0088E268 /* App */,
+				E9DDF6861EEACA100088E268 /* Resource */,
+				E9DDF6851EEACA070088E268 /* Models */,
+				E9DDF6841EEAC9F30088E268 /* CustomCells */,
+				E9DDF6831EEAC9E90088E268 /* ViewControllers */,
+				E9DDF65C1EEAC9C70088E268 /* Assets.xcassets */,
+				E9DDF6611EEAC9C70088E268 /* Info.plist */,
+				E9DDF6591EEAC9C70088E268 /* Mataam.xcdatamodeld */,
 			);
 			path = Mataam;
 			sourceTree = "<group>";
 		};
-		E95413641EE8398E00C27291 /* MataamTests */ = {
+		E9DDF6691EEAC9C70088E268 /* MataamTests */ = {
 			isa = PBXGroup;
 			children = (
-				E95413651EE8398E00C27291 /* MataamTests.swift */,
-				E95413671EE8398E00C27291 /* Info.plist */,
+				E9DDF66A1EEAC9C70088E268 /* MataamTests.swift */,
+				E9DDF66C1EEAC9C70088E268 /* Info.plist */,
 			);
 			path = MataamTests;
 			sourceTree = "<group>";
 		};
-		E954136F1EE8398E00C27291 /* MataamUITests */ = {
+		E9DDF6741EEAC9C70088E268 /* MataamUITests */ = {
 			isa = PBXGroup;
 			children = (
-				E95413701EE8398E00C27291 /* MataamUITests.swift */,
-				E95413721EE8398E00C27291 /* Info.plist */,
+				E9DDF6751EEAC9C70088E268 /* MataamUITests.swift */,
+				E9DDF6771EEAC9C70088E268 /* Info.plist */,
 			);
 			path = MataamUITests;
 			sourceTree = "<group>";
 		};
-		E95413871EE8CC0F00C27291 /* Assets */ = {
+		E9DDF6831EEAC9E90088E268 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
-				E9DDF5E81EE9F4050088E268 /* LoginButton.png */,
-				E9DDF5E91EE9F4050088E268 /* LoginButton@2x.png */,
-				E9DDF5EA1EE9F4050088E268 /* LoginButton@3x.png */,
-				E9DDF5E21EE9EC680088E268 /* empty.png */,
-				E9DDF5E31EE9EC680088E268 /* empty@2x.png */,
-				E9DDF5E41EE9EC680088E268 /* empty@3x.png */,
-				E9DDF5D61EE9EC050088E268 /* CheckBtn-Pressed.png */,
-				E9DDF5D71EE9EC050088E268 /* CheckBtn-Pressed@2x.png */,
-				E9DDF5D81EE9EC050088E268 /* CheckBtn-Pressed@3x.png */,
-				E9DDF5D91EE9EC050088E268 /* Register.png */,
-				E9DDF5DA1EE9EC050088E268 /* Register@2x.png */,
-				E9DDF5DB1EE9EC050088E268 /* Register@3x.png */,
-				E9DDF5C21EE9D7130088E268 /* Splashbackground.png */,
-				E9DDF5C31EE9D7130088E268 /* Splashbackground@2x.png */,
-				E9DDF5C41EE9D7130088E268 /* Splashbackground@3x.png */,
-				E9DDF5C51EE9D7130088E268 /* LogoName.png */,
-				E9DDF5C61EE9D7130088E268 /* LogoName@2x.png */,
-				E9DDF5C71EE9D7130088E268 /* LogoName@3x.png */,
-				E9DDF5C81EE9D7130088E268 /* LoginBackground.png */,
-				E9DDF5C91EE9D7130088E268 /* LoginBackground@2x.png */,
-				E9DDF5CA1EE9D7130088E268 /* LoginBackground@3x.png */,
-			);
-			name = Assets;
-			sourceTree = "<group>";
-		};
-		E9DDF5A31EE9CC680088E268 /* ViewControllers */ = {
-			isa = PBXGroup;
-			children = (
-				E954134F1EE8398E00C27291 /* ADViewController.swift */,
-				E9DDF5D41EE9E88C0088E268 /* LoginViewController.swift */,
+				E9DDF6B21EEACA9A0088E268 /* LoginViewController.swift */,
+				E9DDF6B41EEACAAC0088E268 /* RegisterViewController.swift */,
+				E9DDF6B81EEACB390088E268 /* MainViewController.swift */,
+				E9DDF6F71EEADDC80088E268 /* AdViewController.swift */,
 			);
 			name = ViewControllers;
+			sourceTree = "<group>";
+		};
+		E9DDF6841EEAC9F30088E268 /* CustomCells */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = CustomCells;
+			sourceTree = "<group>";
+		};
+		E9DDF6851EEACA070088E268 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		E9DDF6861EEACA100088E268 /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				E9DDF6F91EEB010E0088E268 /* back-nav.png */,
+				E9DDF6FA1EEB010E0088E268 /* back-nav@2x.png */,
+				E9DDF6FB1EEB010E0088E268 /* back-nav@3x.png */,
+				E9DDF6881EEACA560088E268 /* CheckBtn-Pressed.png */,
+				E9DDF6891EEACA560088E268 /* CheckBtn-Pressed@2x.png */,
+				E9DDF68A1EEACA560088E268 /* CheckBtn-Pressed@3x.png */,
+				E9DDF68B1EEACA560088E268 /* empty.png */,
+				E9DDF68C1EEACA560088E268 /* empty@2x.png */,
+				E9DDF68D1EEACA560088E268 /* empty@3x.png */,
+				E9DDF68E1EEACA560088E268 /* LoginBackground.png */,
+				E9DDF68F1EEACA560088E268 /* LoginBackground@2x.png */,
+				E9DDF6901EEACA560088E268 /* LoginBackground@3x.png */,
+				E9DDF6911EEACA560088E268 /* LoginButton.png */,
+				E9DDF6921EEACA560088E268 /* LoginButton@2x.png */,
+				E9DDF6931EEACA560088E268 /* LoginButton@3x.png */,
+				E9DDF6941EEACA560088E268 /* LogoName.png */,
+				E9DDF6951EEACA560088E268 /* LogoName@2x.png */,
+				E9DDF6961EEACA560088E268 /* LogoName@3x.png */,
+				E9DDF6971EEACA560088E268 /* Register.png */,
+				E9DDF6981EEACA560088E268 /* Register@2x.png */,
+				E9DDF6991EEACA560088E268 /* Register@3x.png */,
+				E9DDF69A1EEACA560088E268 /* Splashbackground.png */,
+				E9DDF69B1EEACA560088E268 /* Splashbackground@2x.png */,
+				E9DDF69C1EEACA560088E268 /* Splashbackground@3x.png */,
+			);
+			name = Resource;
+			sourceTree = "<group>";
+		};
+		E9DDF6871EEACA1B0088E268 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				E9DDF6521EEAC9C70088E268 /* AppDelegate.swift */,
+				E9DDF6561EEAC9C70088E268 /* Main.storyboard */,
+				E9DDF65E1EEAC9C70088E268 /* LaunchScreen.storyboard */,
+			);
+			name = App;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		E95413491EE8398E00C27291 /* Mataam */ = {
+		E9DDF64E1EEAC9C70088E268 /* Mataam */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = E95413751EE8398E00C27291 /* Build configuration list for PBXNativeTarget "Mataam" */;
+			buildConfigurationList = E9DDF67A1EEAC9C70088E268 /* Build configuration list for PBXNativeTarget "Mataam" */;
 			buildPhases = (
-				E95413461EE8398E00C27291 /* Sources */,
-				E95413471EE8398E00C27291 /* Frameworks */,
-				E95413481EE8398E00C27291 /* Resources */,
+				E9DDF64B1EEAC9C70088E268 /* Sources */,
+				E9DDF64C1EEAC9C70088E268 /* Frameworks */,
+				E9DDF64D1EEAC9C70088E268 /* Resources */,
 			);
 			buildRules = (
 			);
@@ -227,75 +266,75 @@
 			);
 			name = Mataam;
 			productName = Mataam;
-			productReference = E954134A1EE8398E00C27291 /* Mataam.app */;
+			productReference = E9DDF64F1EEAC9C70088E268 /* Mataam.app */;
 			productType = "com.apple.product-type.application";
 		};
-		E95413601EE8398E00C27291 /* MataamTests */ = {
+		E9DDF6651EEAC9C70088E268 /* MataamTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = E95413781EE8398E00C27291 /* Build configuration list for PBXNativeTarget "MataamTests" */;
+			buildConfigurationList = E9DDF67D1EEAC9C70088E268 /* Build configuration list for PBXNativeTarget "MataamTests" */;
 			buildPhases = (
-				E954135D1EE8398E00C27291 /* Sources */,
-				E954135E1EE8398E00C27291 /* Frameworks */,
-				E954135F1EE8398E00C27291 /* Resources */,
+				E9DDF6621EEAC9C70088E268 /* Sources */,
+				E9DDF6631EEAC9C70088E268 /* Frameworks */,
+				E9DDF6641EEAC9C70088E268 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				E95413631EE8398E00C27291 /* PBXTargetDependency */,
+				E9DDF6681EEAC9C70088E268 /* PBXTargetDependency */,
 			);
 			name = MataamTests;
 			productName = MataamTests;
-			productReference = E95413611EE8398E00C27291 /* MataamTests.xctest */;
+			productReference = E9DDF6661EEAC9C70088E268 /* MataamTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		E954136B1EE8398E00C27291 /* MataamUITests */ = {
+		E9DDF6701EEAC9C70088E268 /* MataamUITests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = E954137B1EE8398E00C27291 /* Build configuration list for PBXNativeTarget "MataamUITests" */;
+			buildConfigurationList = E9DDF6801EEAC9C70088E268 /* Build configuration list for PBXNativeTarget "MataamUITests" */;
 			buildPhases = (
-				E95413681EE8398E00C27291 /* Sources */,
-				E95413691EE8398E00C27291 /* Frameworks */,
-				E954136A1EE8398E00C27291 /* Resources */,
+				E9DDF66D1EEAC9C70088E268 /* Sources */,
+				E9DDF66E1EEAC9C70088E268 /* Frameworks */,
+				E9DDF66F1EEAC9C70088E268 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				E954136E1EE8398E00C27291 /* PBXTargetDependency */,
+				E9DDF6731EEAC9C70088E268 /* PBXTargetDependency */,
 			);
 			name = MataamUITests;
 			productName = MataamUITests;
-			productReference = E954136C1EE8398E00C27291 /* MataamUITests.xctest */;
+			productReference = E9DDF6711EEAC9C70088E268 /* MataamUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		E95413421EE8398D00C27291 /* Project object */ = {
+		E9DDF6471EEAC9C70088E268 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0830;
 				LastUpgradeCheck = 0830;
 				ORGANIZATIONNAME = AndreszGolanski;
 				TargetAttributes = {
-					E95413491EE8398E00C27291 = {
+					E9DDF64E1EEAC9C70088E268 = {
 						CreatedOnToolsVersion = 8.3.2;
 						DevelopmentTeam = 8H3JFT5FJZ;
 						ProvisioningStyle = Automatic;
 					};
-					E95413601EE8398E00C27291 = {
+					E9DDF6651EEAC9C70088E268 = {
 						CreatedOnToolsVersion = 8.3.2;
 						DevelopmentTeam = 8H3JFT5FJZ;
 						ProvisioningStyle = Automatic;
-						TestTargetID = E95413491EE8398E00C27291;
+						TestTargetID = E9DDF64E1EEAC9C70088E268;
 					};
-					E954136B1EE8398E00C27291 = {
+					E9DDF6701EEAC9C70088E268 = {
 						CreatedOnToolsVersion = 8.3.2;
 						DevelopmentTeam = 8H3JFT5FJZ;
 						ProvisioningStyle = Automatic;
-						TestTargetID = E95413491EE8398E00C27291;
+						TestTargetID = E9DDF64E1EEAC9C70088E268;
 					};
 				};
 			};
-			buildConfigurationList = E95413451EE8398E00C27291 /* Build configuration list for PBXProject "Mataam" */;
+			buildConfigurationList = E9DDF64A1EEAC9C70088E268 /* Build configuration list for PBXProject "Mataam" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -303,58 +342,61 @@
 				en,
 				Base,
 			);
-			mainGroup = E95413411EE8398D00C27291;
-			productRefGroup = E954134B1EE8398E00C27291 /* Products */;
+			mainGroup = E9DDF6461EEAC9C70088E268;
+			productRefGroup = E9DDF6501EEAC9C70088E268 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				E95413491EE8398E00C27291 /* Mataam */,
-				E95413601EE8398E00C27291 /* MataamTests */,
-				E954136B1EE8398E00C27291 /* MataamUITests */,
+				E9DDF64E1EEAC9C70088E268 /* Mataam */,
+				E9DDF6651EEAC9C70088E268 /* MataamTests */,
+				E9DDF6701EEAC9C70088E268 /* MataamUITests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		E95413481EE8398E00C27291 /* Resources */ = {
+		E9DDF64D1EEAC9C70088E268 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E954135B1EE8398E00C27291 /* LaunchScreen.storyboard in Resources */,
-				E9DDF5E71EE9EC680088E268 /* empty@3x.png in Resources */,
-				E9DDF5D21EE9D7130088E268 /* LoginBackground@2x.png in Resources */,
-				E9DDF5DD1EE9EC050088E268 /* CheckBtn-Pressed@2x.png in Resources */,
-				E9DDF5D11EE9D7130088E268 /* LoginBackground.png in Resources */,
-				E9DDF5E51EE9EC680088E268 /* empty.png in Resources */,
-				E9DDF5D31EE9D7130088E268 /* LoginBackground@3x.png in Resources */,
-				E9DDF5CD1EE9D7130088E268 /* Splashbackground@3x.png in Resources */,
-				E9DDF5DE1EE9EC050088E268 /* CheckBtn-Pressed@3x.png in Resources */,
-				E9DDF5E61EE9EC680088E268 /* empty@2x.png in Resources */,
-				E9DDF5CB1EE9D7130088E268 /* Splashbackground.png in Resources */,
-				E9DDF5EB1EE9F4050088E268 /* LoginButton.png in Resources */,
-				E9DDF5DF1EE9EC050088E268 /* Register.png in Resources */,
-				E9DDF5ED1EE9F4050088E268 /* LoginButton@3x.png in Resources */,
-				E95413581EE8398E00C27291 /* Assets.xcassets in Resources */,
-				E9DDF5D01EE9D7130088E268 /* LogoName@3x.png in Resources */,
-				E9DDF5CE1EE9D7130088E268 /* LogoName.png in Resources */,
-				E9DDF5EC1EE9F4050088E268 /* LoginButton@2x.png in Resources */,
-				E9DDF5DC1EE9EC050088E268 /* CheckBtn-Pressed.png in Resources */,
-				E9DDF5CC1EE9D7130088E268 /* Splashbackground@2x.png in Resources */,
-				E9DDF5E11EE9EC050088E268 /* Register@3x.png in Resources */,
-				E9DDF5E01EE9EC050088E268 /* Register@2x.png in Resources */,
-				E9DDF5CF1EE9D7130088E268 /* LogoName@2x.png in Resources */,
-				E95413531EE8398E00C27291 /* Main.storyboard in Resources */,
+				E9DDF6B11EEACA560088E268 /* Splashbackground@3x.png in Resources */,
+				E9DDF6A71EEACA560088E268 /* LoginButton@2x.png in Resources */,
+				E9DDF6AD1EEACA560088E268 /* Register@2x.png in Resources */,
+				E9DDF6A91EEACA560088E268 /* LogoName.png in Resources */,
+				E9DDF6A61EEACA560088E268 /* LoginButton.png in Resources */,
+				E9DDF6A11EEACA560088E268 /* empty@2x.png in Resources */,
+				E9DDF6A51EEACA560088E268 /* LoginBackground@3x.png in Resources */,
+				E9DDF6A31EEACA560088E268 /* LoginBackground.png in Resources */,
+				E9DDF69F1EEACA560088E268 /* CheckBtn-Pressed@3x.png in Resources */,
+				E9DDF69E1EEACA560088E268 /* CheckBtn-Pressed@2x.png in Resources */,
+				E9DDF6AA1EEACA560088E268 /* LogoName@2x.png in Resources */,
+				E9DDF6FC1EEB010E0088E268 /* back-nav.png in Resources */,
+				E9DDF6B01EEACA560088E268 /* Splashbackground@2x.png in Resources */,
+				E9DDF6A41EEACA560088E268 /* LoginBackground@2x.png in Resources */,
+				E9DDF69D1EEACA560088E268 /* CheckBtn-Pressed.png in Resources */,
+				E9DDF6A21EEACA560088E268 /* empty@3x.png in Resources */,
+				E9DDF6A81EEACA560088E268 /* LoginButton@3x.png in Resources */,
+				E9DDF6FE1EEB010E0088E268 /* back-nav@3x.png in Resources */,
+				E9DDF6AC1EEACA560088E268 /* Register.png in Resources */,
+				E9DDF6AE1EEACA560088E268 /* Register@3x.png in Resources */,
+				E9DDF6AB1EEACA560088E268 /* LogoName@3x.png in Resources */,
+				E9DDF6601EEAC9C70088E268 /* LaunchScreen.storyboard in Resources */,
+				E9DDF6FD1EEB010E0088E268 /* back-nav@2x.png in Resources */,
+				E9DDF6AF1EEACA560088E268 /* Splashbackground.png in Resources */,
+				E9DDF6A01EEACA560088E268 /* empty.png in Resources */,
+				E9DDF65D1EEAC9C70088E268 /* Assets.xcassets in Resources */,
+				E9DDF6581EEAC9C70088E268 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		E954135F1EE8398E00C27291 /* Resources */ = {
+		E9DDF6641EEAC9C70088E268 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		E954136A1EE8398E00C27291 /* Resources */ = {
+		E9DDF66F1EEAC9C70088E268 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -364,61 +406,63 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		E95413461EE8398E00C27291 /* Sources */ = {
+		E9DDF64B1EEAC9C70088E268 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E9DDF5D51EE9E88C0088E268 /* LoginViewController.swift in Sources */,
-				E95413501EE8398E00C27291 /* ADViewController.swift in Sources */,
-				E954134E1EE8398E00C27291 /* AppDelegate.swift in Sources */,
-				E95413561EE8398E00C27291 /* Mataam.xcdatamodeld in Sources */,
+				E9DDF6B91EEACB390088E268 /* MainViewController.swift in Sources */,
+				E9DDF6B31EEACA9A0088E268 /* LoginViewController.swift in Sources */,
+				E9DDF6B51EEACAAC0088E268 /* RegisterViewController.swift in Sources */,
+				E9DDF6F81EEADDC80088E268 /* AdViewController.swift in Sources */,
+				E9DDF6531EEAC9C70088E268 /* AppDelegate.swift in Sources */,
+				E9DDF65B1EEAC9C70088E268 /* Mataam.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		E954135D1EE8398E00C27291 /* Sources */ = {
+		E9DDF6621EEAC9C70088E268 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E95413661EE8398E00C27291 /* MataamTests.swift in Sources */,
+				E9DDF66B1EEAC9C70088E268 /* MataamTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		E95413681EE8398E00C27291 /* Sources */ = {
+		E9DDF66D1EEAC9C70088E268 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E95413711EE8398E00C27291 /* MataamUITests.swift in Sources */,
+				E9DDF6761EEAC9C70088E268 /* MataamUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		E95413631EE8398E00C27291 /* PBXTargetDependency */ = {
+		E9DDF6681EEAC9C70088E268 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = E95413491EE8398E00C27291 /* Mataam */;
-			targetProxy = E95413621EE8398E00C27291 /* PBXContainerItemProxy */;
+			target = E9DDF64E1EEAC9C70088E268 /* Mataam */;
+			targetProxy = E9DDF6671EEAC9C70088E268 /* PBXContainerItemProxy */;
 		};
-		E954136E1EE8398E00C27291 /* PBXTargetDependency */ = {
+		E9DDF6731EEAC9C70088E268 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = E95413491EE8398E00C27291 /* Mataam */;
-			targetProxy = E954136D1EE8398E00C27291 /* PBXContainerItemProxy */;
+			target = E9DDF64E1EEAC9C70088E268 /* Mataam */;
+			targetProxy = E9DDF6721EEAC9C70088E268 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		E95413511EE8398E00C27291 /* Main.storyboard */ = {
+		E9DDF6561EEAC9C70088E268 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				E95413521EE8398E00C27291 /* Base */,
+				E9DDF6571EEAC9C70088E268 /* Base */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
-		E95413591EE8398E00C27291 /* LaunchScreen.storyboard */ = {
+		E9DDF65E1EEAC9C70088E268 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				E954135A1EE8398E00C27291 /* Base */,
+				E9DDF65F1EEAC9C70088E268 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -426,7 +470,7 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		E95413731EE8398E00C27291 /* Debug */ = {
+		E9DDF6781EEAC9C70088E268 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -477,7 +521,7 @@
 			};
 			name = Debug;
 		};
-		E95413741EE8398E00C27291 /* Release */ = {
+		E9DDF6791EEAC9C70088E268 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -521,7 +565,7 @@
 			};
 			name = Release;
 		};
-		E95413761EE8398E00C27291 /* Debug */ = {
+		E9DDF67B1EEAC9C70088E268 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -534,7 +578,7 @@
 			};
 			name = Debug;
 		};
-		E95413771EE8398E00C27291 /* Release */ = {
+		E9DDF67C1EEAC9C70088E268 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -547,7 +591,7 @@
 			};
 			name = Release;
 		};
-		E95413791EE8398E00C27291 /* Debug */ = {
+		E9DDF67E1EEAC9C70088E268 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
@@ -562,7 +606,7 @@
 			};
 			name = Debug;
 		};
-		E954137A1EE8398E00C27291 /* Release */ = {
+		E9DDF67F1EEAC9C70088E268 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
@@ -577,7 +621,7 @@
 			};
 			name = Release;
 		};
-		E954137C1EE8398E00C27291 /* Debug */ = {
+		E9DDF6811EEAC9C70088E268 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
@@ -591,7 +635,7 @@
 			};
 			name = Debug;
 		};
-		E954137D1EE8398E00C27291 /* Release */ = {
+		E9DDF6821EEAC9C70088E268 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
@@ -608,38 +652,38 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		E95413451EE8398E00C27291 /* Build configuration list for PBXProject "Mataam" */ = {
+		E9DDF64A1EEAC9C70088E268 /* Build configuration list for PBXProject "Mataam" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				E95413731EE8398E00C27291 /* Debug */,
-				E95413741EE8398E00C27291 /* Release */,
+				E9DDF6781EEAC9C70088E268 /* Debug */,
+				E9DDF6791EEAC9C70088E268 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		E95413751EE8398E00C27291 /* Build configuration list for PBXNativeTarget "Mataam" */ = {
+		E9DDF67A1EEAC9C70088E268 /* Build configuration list for PBXNativeTarget "Mataam" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				E95413761EE8398E00C27291 /* Debug */,
-				E95413771EE8398E00C27291 /* Release */,
+				E9DDF67B1EEAC9C70088E268 /* Debug */,
+				E9DDF67C1EEAC9C70088E268 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		E95413781EE8398E00C27291 /* Build configuration list for PBXNativeTarget "MataamTests" */ = {
+		E9DDF67D1EEAC9C70088E268 /* Build configuration list for PBXNativeTarget "MataamTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				E95413791EE8398E00C27291 /* Debug */,
-				E954137A1EE8398E00C27291 /* Release */,
+				E9DDF67E1EEAC9C70088E268 /* Debug */,
+				E9DDF67F1EEAC9C70088E268 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		E954137B1EE8398E00C27291 /* Build configuration list for PBXNativeTarget "MataamUITests" */ = {
+		E9DDF6801EEAC9C70088E268 /* Build configuration list for PBXNativeTarget "MataamUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				E954137C1EE8398E00C27291 /* Debug */,
-				E954137D1EE8398E00C27291 /* Release */,
+				E9DDF6811EEAC9C70088E268 /* Debug */,
+				E9DDF6821EEAC9C70088E268 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -647,17 +691,17 @@
 /* End XCConfigurationList section */
 
 /* Begin XCVersionGroup section */
-		E95413541EE8398E00C27291 /* Mataam.xcdatamodeld */ = {
+		E9DDF6591EEAC9C70088E268 /* Mataam.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (
-				E95413551EE8398E00C27291 /* Mataam.xcdatamodel */,
+				E9DDF65A1EEAC9C70088E268 /* Mataam.xcdatamodel */,
 			);
-			currentVersion = E95413551EE8398E00C27291 /* Mataam.xcdatamodel */;
+			currentVersion = E9DDF65A1EEAC9C70088E268 /* Mataam.xcdatamodel */;
 			path = Mataam.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;
 		};
 /* End XCVersionGroup section */
 	};
-	rootObject = E95413421EE8398D00C27291 /* Project object */;
+	rootObject = E9DDF6471EEAC9C70088E268 /* Project object */;
 }
