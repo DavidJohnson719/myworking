@@ -13,7 +13,7 @@ class AdViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        self.navigationController?.isNavigationBarHidden = false
     }
 
     override func didReceiveMemoryWarning() {
@@ -22,6 +22,11 @@ class AdViewController: UIViewController {
     }
     
 
+    //MARK: - IBActions
+    
+    @IBAction func onSkipAd(_ sender: Any) {
+        
+    }
     /*
     // MARK: - Navigation
 

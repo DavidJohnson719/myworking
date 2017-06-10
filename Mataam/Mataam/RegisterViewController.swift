@@ -8,11 +8,18 @@
 
 import UIKit
 
-class RegisterViewController: UIViewController {
+class RegisterViewController: UIViewController, UITextFieldDelegate {
 
+    @IBOutlet weak var scrvRegister: UIScrollView!
+    @IBOutlet weak var btnPrivacy: UIButton!
+    
+    var isSelect = false
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.navigationController?.isNavigationBarHidden = false;
+        
+        self.navigationController?.isNavigationBarHidden = false
+        
         // Translucent NavigationBar
         navigationController?.setNavigationBarHidden(false, animated: true)
         navigationController?.navigationBar.setBackgroundImage(UIImage(), for: UIBarMetrics.default)
@@ -22,12 +29,83 @@ class RegisterViewController: UIViewController {
         // NavigationBar title color
         navigationController?.navigationBar.titleTextAttributes = [NSForegroundColorAttributeName: UIColor.white]
         
+        let tap = UITapGestureRecognizer(target: self, action: #selector(dismissKeyboard))
+        view.addGestureRecognizer(tap)
+
+        let swipeRight = UISwipeGestureRecognizer(target: self, action: #selector(self.respondToSwipeGesture))
+        swipeRight.direction = UISwipeGestureRecognizerDirection.right
+        self.view.addGestureRecognizer(swipeRight)
+
+        
+        NotificationCenter.default.addObserver(self, selector: #selector(self.keyboardWillShow), name: NSNotification.Name.UIKeyboardWillShow, object: nil)
+        NotificationCenter.default.addObserver(self, selector: #selector(self.keyboardWillHide), name: NSNotification.Name.UIKeyboardWillHide, object: nil)
+        
     }
+    
+    //MARK: - IBActions
     
     @IBAction func onBackBtn(_ sender: Any) {
         navigationController?.popViewController(animated: true)
         dismiss(animated: true, completion: nil)
     }
+    
+    @IBAction func onPrivacy(_ sender: Any) {
+        if isSelect {
+            btnPrivacy.setImage(UIImage.init(named:"checkbox.png"), for: UIControlState.normal)
+            isSelect = false
+        }else{
+            btnPrivacy.setImage(UIImage.init(named:"CheckBtn-Pressed.png"), for: .normal)
+            isSelect = true
+        }
+    }
+    @IBAction func onRegister(_ sender: Any) {
+    }
+    
+    //MARK: - CustomFunc
+    
+    func dismissKeyboard() {
+        view.endEditing(true)
+    }
+    
+    func keyboardWillShow(notification: NSNotification) {
+        if let keyboardSize = (notification.userInfo?[UIKeyboardFrameBeginUserInfoKey] as? NSValue)?.cgRectValue {
+            let contentInsets = UIEdgeInsets(top:0.0, left:0.0, bottom:keyboardSize.height, right:0.0)
+            scrvRegister.contentInset = contentInsets
+        }
+    }
+    
+    func keyboardWillHide(notification: NSNotification) {
+        scrvRegister.contentInset = UIEdgeInsets(top: 0, left: 0, bottom: 0, right: 0)
+    }
+    
+    func respondToSwipeGesture(gesture: UIGestureRecognizer) {
+        if let swipeGesture = gesture as? UISwipeGestureRecognizer {
+            switch swipeGesture.direction {
+            case UISwipeGestureRecognizerDirection.right:
+                navigationController?.popViewController(animated: true)
+                dismiss(animated: true, completion: nil)
+            case UISwipeGestureRecognizerDirection.down:
+                print("Swiped down")
+            case UISwipeGestureRecognizerDirection.left:
+                print("Swiped left")
+            case UISwipeGestureRecognizerDirection.up:
+                print("Swiped up")
+            default:
+                break
+            }
+        }
+    }
+    
+    //MARK: - UITextFieldDelegate
+    
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool // called when 'return' key pressed. return false to ignore.
+    {
+        dismissKeyboard()
+        return true
+    }
+
+
+    
     /*
     // MARK: - Navigation
 
