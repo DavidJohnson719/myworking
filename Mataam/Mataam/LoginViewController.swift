@@ -89,10 +89,14 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
     }
     
     @IBAction func onLogin(_ sender: Any) {
-        let storyboard = UIStoryboard(name: "Main", bundle: nil)
-        let vc = storyboard.instantiateViewController(withIdentifier: "AdVC") as! AdViewController
+        performSegue(withIdentifier: "main", sender: nil)
+//        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+//        let vc = storyboard.instantiateViewController(withIdentifier: "AdVC") as! AdViewController
 //        vc.newsObj = newsObj
-        navigationController?.pushViewController(vc, animated: true)
+//        navigationController?.pushViewController(vc, animated: true)
+    }
+    @IBAction func onRegister(_ sender: Any) {
+        performSegue(withIdentifier: "register", sender: nil)
     }
 
 }

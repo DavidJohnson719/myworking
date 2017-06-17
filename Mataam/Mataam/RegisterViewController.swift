@@ -18,8 +18,6 @@ class RegisterViewController: UIViewController, UITextFieldDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        self.navigationController?.isNavigationBarHidden = false
-        
         // Translucent NavigationBar
         navigationController?.setNavigationBarHidden(false, animated: true)
         navigationController?.navigationBar.setBackgroundImage(UIImage(), for: UIBarMetrics.default)
@@ -59,6 +57,7 @@ class RegisterViewController: UIViewController, UITextFieldDelegate {
         }
     }
     @IBAction func onRegister(_ sender: Any) {
+        performSegue(withIdentifier: "sms", sender: nil)
     }
     
     //MARK: - CustomFunc

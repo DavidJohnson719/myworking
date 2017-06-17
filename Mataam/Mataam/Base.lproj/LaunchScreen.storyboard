@@ -21,11 +21,11 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Splashbackground.png" translatesAutoresizingMaskIntoConstraints="NO" id="ye4-0J-qze">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Splashbackground" translatesAutoresizingMaskIntoConstraints="NO" id="ye4-0J-qze">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                                 <color key="backgroundColor" red="0.0" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="LogoName.png" translatesAutoresizingMaskIntoConstraints="NO" id="O5Q-xT-pSF">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="LogoName" translatesAutoresizingMaskIntoConstraints="NO" id="O5Q-xT-pSF">
                                 <rect key="frame" x="57" y="233" width="260" height="200"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="200" id="Zoe-4w-QOr"/>
@@ -50,7 +50,7 @@
         </scene>
     </scenes>
     <resources>
-        <image name="LogoName.png" width="292" height="232"/>
-        <image name="Splashbackground.png" width="375" height="667"/>
+        <image name="LogoName" width="292" height="232"/>
+        <image name="Splashbackground" width="375" height="667"/>
     </resources>
 </document>
