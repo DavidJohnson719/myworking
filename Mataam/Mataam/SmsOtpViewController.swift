@@ -1,10 +1,3 @@
-//
-//  SmsOtpViewController.swift
-//  Mataam
-//
-//  Created by AndreszGolanski on 6/12/17.
-//  Copyright © 2017 AndreszGolanski. All rights reserved.
-//
 
 import UIKit
 

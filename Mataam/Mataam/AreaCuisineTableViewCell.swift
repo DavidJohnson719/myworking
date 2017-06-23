@@ -1,10 +1,3 @@
-//
-//  AreaCuisineTableViewCell.swift
-//  Mataam
-//
-//  Created by AndreszGolanski on 6/17/17.
-//  Copyright © 2017 AndreszGolanski. All rights reserved.
-//
 
 import UIKit
 
@@ -24,5 +17,7 @@ class AreaCuisineTableViewCell: UITableViewCell {
 
         // Configure the view for the selected state
     }
+    
+    
     
 }

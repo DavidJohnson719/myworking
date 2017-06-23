@@ -7,6 +7,28 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		42B7E5EB09B1698B93625F17 /* Pods_MataamTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C49B1B2603A9495A0426A409 /* Pods_MataamTests.framework */; };
+		9B67E9B0D4301E2C06043709 /* Pods_MataamUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3B688B6F205559660F43BBE2 /* Pods_MataamUITests.framework */; };
+		D70EA970DBEB3F4A5FB7FC63 /* Pods_Mataam.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C8A3B2736A556FCD17869064 /* Pods_Mataam.framework */; };
+		E91163551EF9874D00191CE8 /* DeliveryRestaurantMenuTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E91163531EF9874D00191CE8 /* DeliveryRestaurantMenuTVC.swift */; };
+		E91163561EF9874D00191CE8 /* DeliveryRestaurantMenuTVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = E91163541EF9874D00191CE8 /* DeliveryRestaurantMenuTVC.xib */; };
+		E91163581EF9D28200191CE8 /* DeliveryAddToCartVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E91163571EF9D28200191CE8 /* DeliveryAddToCartVC.swift */; };
+		E921FCA91EFC9C1E0007BB8C /* DeliveryCheckoutVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E921FCA81EFC9C1E0007BB8C /* DeliveryCheckoutVC.swift */; };
+		E95E87F61EFAB6BB00C2AAB2 /* AreaHeaderTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E95E87F51EFAB6BB00C2AAB2 /* AreaHeaderTVC.swift */; };
+		E95E87F81EFAB6EE00C2AAB2 /* AreaHeaderTVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = E95E87F71EFAB6EE00C2AAB2 /* AreaHeaderTVC.xib */; };
+		E95E87FB1EFB11EA00C2AAB2 /* RestaurantReviewTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E95E87F91EFB11EA00C2AAB2 /* RestaurantReviewTVC.swift */; };
+		E95E87FC1EFB11EA00C2AAB2 /* RestaurantReviewTVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = E95E87FA1EFB11EA00C2AAB2 /* RestaurantReviewTVC.xib */; };
+		E95E87FF1EFB457B00C2AAB2 /* OrderSummaryTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E95E87FD1EFB457B00C2AAB2 /* OrderSummaryTVC.swift */; };
+		E95E88001EFB457B00C2AAB2 /* OrderSummaryTVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = E95E87FE1EFB457B00C2AAB2 /* OrderSummaryTVC.xib */; };
+		E97A7FAD1EF8294000324D2A /* DeliveryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E97A7FAB1EF8294000324D2A /* DeliveryTableViewCell.swift */; };
+		E97A7FAE1EF8294000324D2A /* DeliveryTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E97A7FAC1EF8294000324D2A /* DeliveryTableViewCell.xib */; };
+		E97A7FB11EF82F5300324D2A /* CuisineCVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E97A7FAF1EF82F5300324D2A /* CuisineCVC.swift */; };
+		E97A7FB21EF82F5300324D2A /* CuisineCVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = E97A7FB01EF82F5300324D2A /* CuisineCVC.xib */; };
+		E97A7FB81EF87BD600324D2A /* RestaurantDetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E97A7FB71EF87BD600324D2A /* RestaurantDetailVC.swift */; };
+		E97A7FBA1EF888B800324D2A /* OrderVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E97A7FB91EF888B800324D2A /* OrderVC.swift */; };
+		E9967BD11EF6B2E600B2EC14 /* TableViewingCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9967BCF1EF6B2E600B2EC14 /* TableViewingCollectionViewCell.swift */; };
+		E9967BD21EF6B2E600B2EC14 /* TableViewingCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E9967BD01EF6B2E600B2EC14 /* TableViewingCollectionViewCell.xib */; };
+		E9967BD81EF6CA6B00B2EC14 /* PopOverViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9967BD71EF6CA6B00B2EC14 /* PopOverViewController.swift */; };
 		E9BAC0101EF4B70900226050 /* ChooseAreaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9BAC00F1EF4B70900226050 /* ChooseAreaViewController.swift */; };
 		E9BAC0121EF4B72100226050 /* ChooseCuisineViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9BAC0111EF4B72100226050 /* ChooseCuisineViewController.swift */; };
 		E9BAC0141EF4B73F00226050 /* SearchMainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9BAC0131EF4B73F00226050 /* SearchMainViewController.swift */; };
@@ -50,6 +72,34 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		29ED4EB5BC5E90148462F03A /* Pods-MataamUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MataamUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-MataamUITests/Pods-MataamUITests.release.xcconfig"; sourceTree = "<group>"; };
+		3B688B6F205559660F43BBE2 /* Pods_MataamUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MataamUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		46EDD434584BEC2019A25F29 /* Pods-Mataam.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Mataam.release.xcconfig"; path = "Pods/Target Support Files/Pods-Mataam/Pods-Mataam.release.xcconfig"; sourceTree = "<group>"; };
+		8EA3889E6FF1ADEFE7D07761 /* Pods-MataamTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MataamTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MataamTests/Pods-MataamTests.debug.xcconfig"; sourceTree = "<group>"; };
+		AD0B745D5F99A623148095CE /* Pods-Mataam.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Mataam.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Mataam/Pods-Mataam.debug.xcconfig"; sourceTree = "<group>"; };
+		C49B1B2603A9495A0426A409 /* Pods_MataamTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MataamTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C4D63275D4379AB3D94BBAB1 /* Pods-MataamTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MataamTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-MataamTests/Pods-MataamTests.release.xcconfig"; sourceTree = "<group>"; };
+		C8A3B2736A556FCD17869064 /* Pods_Mataam.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Mataam.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D61342BBA1EFA684A3355A0B /* Pods-MataamUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MataamUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MataamUITests/Pods-MataamUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		E91163531EF9874D00191CE8 /* DeliveryRestaurantMenuTVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DeliveryRestaurantMenuTVC.swift; sourceTree = "<group>"; };
+		E91163541EF9874D00191CE8 /* DeliveryRestaurantMenuTVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DeliveryRestaurantMenuTVC.xib; sourceTree = "<group>"; };
+		E91163571EF9D28200191CE8 /* DeliveryAddToCartVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DeliveryAddToCartVC.swift; sourceTree = "<group>"; };
+		E921FCA81EFC9C1E0007BB8C /* DeliveryCheckoutVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DeliveryCheckoutVC.swift; sourceTree = "<group>"; };
+		E95E87F51EFAB6BB00C2AAB2 /* AreaHeaderTVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AreaHeaderTVC.swift; sourceTree = "<group>"; };
+		E95E87F71EFAB6EE00C2AAB2 /* AreaHeaderTVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AreaHeaderTVC.xib; sourceTree = "<group>"; };
+		E95E87F91EFB11EA00C2AAB2 /* RestaurantReviewTVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RestaurantReviewTVC.swift; sourceTree = "<group>"; };
+		E95E87FA1EFB11EA00C2AAB2 /* RestaurantReviewTVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RestaurantReviewTVC.xib; sourceTree = "<group>"; };
+		E95E87FD1EFB457B00C2AAB2 /* OrderSummaryTVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OrderSummaryTVC.swift; sourceTree = "<group>"; };
+		E95E87FE1EFB457B00C2AAB2 /* OrderSummaryTVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = OrderSummaryTVC.xib; sourceTree = "<group>"; };
+		E97A7FAB1EF8294000324D2A /* DeliveryTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DeliveryTableViewCell.swift; sourceTree = "<group>"; };
+		E97A7FAC1EF8294000324D2A /* DeliveryTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DeliveryTableViewCell.xib; sourceTree = "<group>"; };
+		E97A7FAF1EF82F5300324D2A /* CuisineCVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CuisineCVC.swift; sourceTree = "<group>"; };
+		E97A7FB01EF82F5300324D2A /* CuisineCVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CuisineCVC.xib; sourceTree = "<group>"; };
+		E97A7FB71EF87BD600324D2A /* RestaurantDetailVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RestaurantDetailVC.swift; sourceTree = "<group>"; };
+		E97A7FB91EF888B800324D2A /* OrderVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OrderVC.swift; sourceTree = "<group>"; };
+		E9967BCF1EF6B2E600B2EC14 /* TableViewingCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewingCollectionViewCell.swift; sourceTree = "<group>"; };
+		E9967BD01EF6B2E600B2EC14 /* TableViewingCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TableViewingCollectionViewCell.xib; sourceTree = "<group>"; };
+		E9967BD71EF6CA6B00B2EC14 /* PopOverViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PopOverViewController.swift; sourceTree = "<group>"; };
 		E9BAC00F1EF4B70900226050 /* ChooseAreaViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChooseAreaViewController.swift; sourceTree = "<group>"; };
 		E9BAC0111EF4B72100226050 /* ChooseCuisineViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChooseCuisineViewController.swift; sourceTree = "<group>"; };
 		E9BAC0131EF4B73F00226050 /* SearchMainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchMainViewController.swift; sourceTree = "<group>"; };
@@ -86,6 +136,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D70EA970DBEB3F4A5FB7FC63 /* Pods_Mataam.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -93,6 +144,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				42B7E5EB09B1698B93625F17 /* Pods_MataamTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -100,12 +152,36 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9B67E9B0D4301E2C06043709 /* Pods_MataamUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		7284B0635AB590933D120A0D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C8A3B2736A556FCD17869064 /* Pods_Mataam.framework */,
+				C49B1B2603A9495A0426A409 /* Pods_MataamTests.framework */,
+				3B688B6F205559660F43BBE2 /* Pods_MataamUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		7E750C530FCA5ACED4A3D5B1 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				AD0B745D5F99A623148095CE /* Pods-Mataam.debug.xcconfig */,
+				46EDD434584BEC2019A25F29 /* Pods-Mataam.release.xcconfig */,
+				8EA3889E6FF1ADEFE7D07761 /* Pods-MataamTests.debug.xcconfig */,
+				C4D63275D4379AB3D94BBAB1 /* Pods-MataamTests.release.xcconfig */,
+				D61342BBA1EFA684A3355A0B /* Pods-MataamUITests.debug.xcconfig */,
+				29ED4EB5BC5E90148462F03A /* Pods-MataamUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		E9DDF6461EEAC9C70088E268 = {
 			isa = PBXGroup;
 			children = (
@@ -113,6 +189,8 @@
 				E9DDF6691EEAC9C70088E268 /* MataamTests */,
 				E9DDF6741EEAC9C70088E268 /* MataamUITests */,
 				E9DDF6501EEAC9C70088E268 /* Products */,
+				7E750C530FCA5ACED4A3D5B1 /* Pods */,
+				7284B0635AB590933D120A0D /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -170,6 +248,11 @@
 				E9BAC00F1EF4B70900226050 /* ChooseAreaViewController.swift */,
 				E9BAC0111EF4B72100226050 /* ChooseCuisineViewController.swift */,
 				E9BAC0131EF4B73F00226050 /* SearchMainViewController.swift */,
+				E9967BD71EF6CA6B00B2EC14 /* PopOverViewController.swift */,
+				E97A7FB71EF87BD600324D2A /* RestaurantDetailVC.swift */,
+				E97A7FB91EF888B800324D2A /* OrderVC.swift */,
+				E91163571EF9D28200191CE8 /* DeliveryAddToCartVC.swift */,
+				E921FCA81EFC9C1E0007BB8C /* DeliveryCheckoutVC.swift */,
 			);
 			name = ViewControllers;
 			sourceTree = "<group>";
@@ -179,6 +262,20 @@
 			children = (
 				E9BAC0171EF4C96800226050 /* AreaCuisineTableViewCell.swift */,
 				E9BAC0181EF4C96800226050 /* AreaCuisineTableViewCell.xib */,
+				E9967BCF1EF6B2E600B2EC14 /* TableViewingCollectionViewCell.swift */,
+				E9967BD01EF6B2E600B2EC14 /* TableViewingCollectionViewCell.xib */,
+				E97A7FAB1EF8294000324D2A /* DeliveryTableViewCell.swift */,
+				E97A7FAC1EF8294000324D2A /* DeliveryTableViewCell.xib */,
+				E95E87F51EFAB6BB00C2AAB2 /* AreaHeaderTVC.swift */,
+				E95E87F71EFAB6EE00C2AAB2 /* AreaHeaderTVC.xib */,
+				E97A7FAF1EF82F5300324D2A /* CuisineCVC.swift */,
+				E97A7FB01EF82F5300324D2A /* CuisineCVC.xib */,
+				E91163531EF9874D00191CE8 /* DeliveryRestaurantMenuTVC.swift */,
+				E91163541EF9874D00191CE8 /* DeliveryRestaurantMenuTVC.xib */,
+				E95E87F91EFB11EA00C2AAB2 /* RestaurantReviewTVC.swift */,
+				E95E87FA1EFB11EA00C2AAB2 /* RestaurantReviewTVC.xib */,
+				E95E87FD1EFB457B00C2AAB2 /* OrderSummaryTVC.swift */,
+				E95E87FE1EFB457B00C2AAB2 /* OrderSummaryTVC.xib */,
 			);
 			name = CustomCells;
 			sourceTree = "<group>";
@@ -220,9 +317,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = E9DDF67A1EEAC9C70088E268 /* Build configuration list for PBXNativeTarget "Mataam" */;
 			buildPhases = (
+				D7E01EA5E332133E9898949E /* [CP] Check Pods Manifest.lock */,
 				E9DDF64B1EEAC9C70088E268 /* Sources */,
 				E9DDF64C1EEAC9C70088E268 /* Frameworks */,
 				E9DDF64D1EEAC9C70088E268 /* Resources */,
+				E4B07BF5BEE98DB44AE2F607 /* [CP] Embed Pods Frameworks */,
+				79A87BD3712A2F89FB649718 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -237,9 +337,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = E9DDF67D1EEAC9C70088E268 /* Build configuration list for PBXNativeTarget "MataamTests" */;
 			buildPhases = (
+				6F270E2C67CC49B7C33E0570 /* [CP] Check Pods Manifest.lock */,
 				E9DDF6621EEAC9C70088E268 /* Sources */,
 				E9DDF6631EEAC9C70088E268 /* Frameworks */,
 				E9DDF6641EEAC9C70088E268 /* Resources */,
+				493A1553C985F6140557BF95 /* [CP] Embed Pods Frameworks */,
+				DCF344BE56AFE0E1F5B9E84B /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -255,9 +358,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = E9DDF6801EEAC9C70088E268 /* Build configuration list for PBXNativeTarget "MataamUITests" */;
 			buildPhases = (
+				97BE2FCA26898F4E09690858 /* [CP] Check Pods Manifest.lock */,
 				E9DDF66D1EEAC9C70088E268 /* Sources */,
 				E9DDF66E1EEAC9C70088E268 /* Frameworks */,
 				E9DDF66F1EEAC9C70088E268 /* Resources */,
+				7A5CCD4F56C8C2B1EF1EF3DC /* [CP] Embed Pods Frameworks */,
+				73806150C02F26C1A38599CA /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -325,13 +431,20 @@
 			files = (
 				E9BAC01A1EF4C96800226050 /* AreaCuisineTableViewCell.xib in Resources */,
 				E9D2D7A41EEF5FF200F2FBC8 /* KittenSwashTrial.ttf in Resources */,
+				E97A7FAE1EF8294000324D2A /* DeliveryTableViewCell.xib in Resources */,
+				E95E87F81EFAB6EE00C2AAB2 /* AreaHeaderTVC.xib in Resources */,
+				E91163561EF9874D00191CE8 /* DeliveryRestaurantMenuTVC.xib in Resources */,
+				E97A7FB21EF82F5300324D2A /* CuisineCVC.xib in Resources */,
 				E9D2D7A21EEF5FF200F2FBC8 /* KittenSlantTrial.ttf in Resources */,
 				E9D2D7A11EEF5FF200F2FBC8 /* KittenFatTrial.ttf in Resources */,
 				E9D2D7A31EEF5FF200F2FBC8 /* KittenSwashMonolineTrial.ttf in Resources */,
 				E9D2D7A01EEF5FF200F2FBC8 /* KittenBoldTrial.ttf in Resources */,
 				E9DDF6601EEAC9C70088E268 /* LaunchScreen.storyboard in Resources */,
+				E95E88001EFB457B00C2AAB2 /* OrderSummaryTVC.xib in Resources */,
 				E9DDF65D1EEAC9C70088E268 /* Assets.xcassets in Resources */,
 				E9DDF6581EEAC9C70088E268 /* Main.storyboard in Resources */,
+				E9967BD21EF6B2E600B2EC14 /* TableViewingCollectionViewCell.xib in Resources */,
+				E95E87FC1EFB11EA00C2AAB2 /* RestaurantReviewTVC.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -351,6 +464,144 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		493A1553C985F6140557BF95 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MataamTests/Pods-MataamTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6F270E2C67CC49B7C33E0570 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		73806150C02F26C1A38599CA /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MataamUITests/Pods-MataamUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		79A87BD3712A2F89FB649718 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Mataam/Pods-Mataam-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7A5CCD4F56C8C2B1EF1EF3DC /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MataamUITests/Pods-MataamUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		97BE2FCA26898F4E09690858 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		D7E01EA5E332133E9898949E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		DCF344BE56AFE0E1F5B9E84B /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MataamTests/Pods-MataamTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E4B07BF5BEE98DB44AE2F607 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Mataam/Pods-Mataam-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		E9DDF64B1EEAC9C70088E268 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -358,11 +609,23 @@
 			files = (
 				E9DDF6B91EEACB390088E268 /* MainViewController.swift in Sources */,
 				E9DDF6B31EEACA9A0088E268 /* LoginViewController.swift in Sources */,
+				E9967BD81EF6CA6B00B2EC14 /* PopOverViewController.swift in Sources */,
 				E9DDF6B51EEACAAC0088E268 /* RegisterViewController.swift in Sources */,
 				E9BAC0191EF4C96800226050 /* AreaCuisineTableViewCell.swift in Sources */,
+				E97A7FAD1EF8294000324D2A /* DeliveryTableViewCell.swift in Sources */,
+				E921FCA91EFC9C1E0007BB8C /* DeliveryCheckoutVC.swift in Sources */,
+				E97A7FB81EF87BD600324D2A /* RestaurantDetailVC.swift in Sources */,
+				E9967BD11EF6B2E600B2EC14 /* TableViewingCollectionViewCell.swift in Sources */,
+				E97A7FB11EF82F5300324D2A /* CuisineCVC.swift in Sources */,
+				E95E87F61EFAB6BB00C2AAB2 /* AreaHeaderTVC.swift in Sources */,
+				E91163551EF9874D00191CE8 /* DeliveryRestaurantMenuTVC.swift in Sources */,
 				E9DDF6F81EEADDC80088E268 /* AdViewController.swift in Sources */,
+				E91163581EF9D28200191CE8 /* DeliveryAddToCartVC.swift in Sources */,
 				E9D2D7411EEF3D8400F2FBC8 /* SmsOtpViewController.swift in Sources */,
 				E9DDF6531EEAC9C70088E268 /* AppDelegate.swift in Sources */,
+				E95E87FF1EFB457B00C2AAB2 /* OrderSummaryTVC.swift in Sources */,
+				E97A7FBA1EF888B800324D2A /* OrderVC.swift in Sources */,
+				E95E87FB1EFB11EA00C2AAB2 /* RestaurantReviewTVC.swift in Sources */,
 				E9BAC0141EF4B73F00226050 /* SearchMainViewController.swift in Sources */,
 				E9DDF65B1EEAC9C70088E268 /* Mataam.xcdatamodeld in Sources */,
 				E9D2D7991EEF5AA300F2FBC8 /* Constants.swift in Sources */,
@@ -519,6 +782,7 @@
 		};
 		E9DDF67B1EEAC9C70088E268 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = AD0B745D5F99A623148095CE /* Pods-Mataam.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 8H3JFT5FJZ;
@@ -534,6 +798,7 @@
 		};
 		E9DDF67C1EEAC9C70088E268 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 46EDD434584BEC2019A25F29 /* Pods-Mataam.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 8H3JFT5FJZ;
@@ -549,6 +814,7 @@
 		};
 		E9DDF67E1EEAC9C70088E268 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8EA3889E6FF1ADEFE7D07761 /* Pods-MataamTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -564,6 +830,7 @@
 		};
 		E9DDF67F1EEAC9C70088E268 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C4D63275D4379AB3D94BBAB1 /* Pods-MataamTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -579,6 +846,7 @@
 		};
 		E9DDF6811EEAC9C70088E268 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D61342BBA1EFA684A3355A0B /* Pods-MataamUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				DEVELOPMENT_TEAM = 8H3JFT5FJZ;
@@ -593,6 +861,7 @@
 		};
 		E9DDF6821EEAC9C70088E268 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 29ED4EB5BC5E90148462F03A /* Pods-MataamUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				DEVELOPMENT_TEAM = 8H3JFT5FJZ;

@@ -1,25 +1,121 @@
-//
-//  ChooseAreaViewController.swift
-//  Mataam
-//
-//  Created by AndreszGolanski on 6/17/17.
-//  Copyright © 2017 AndreszGolanski. All rights reserved.
-//
 
 import UIKit
 
-class ChooseAreaViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
+class ChooseAreaViewController: UIViewController, UITableViewDataSource, UITableViewDelegate, AreaHeaderTVCDelegate {
 
-    let areaList = ["Ahmadi","Al Julayah","Abu Halifa", "Al Julayah - Az Zour Sulah"]
+    @IBOutlet weak var tvChooseLocation: UITableView!
+
+    
+    let areaList1 = ["Ahmadi","Al Julayah","Abu Halifa", "Al Julayah - Azvarur Sulah","Al Julayah"]
+    let areaList2 = ["Ahmadi","Al Julayah","Abu Halifa", "Al Julayah - Azvarur Sulah","Al Julayah","Abu Halifa"]
+    var area = [[NSString]()]
+    
+    var selectedSection = 1;
+    var isHeaderOpen = true
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
+        self.area.append(areaList1 as [NSString])
+        self.area.append(areaList2 as [NSString])
+        
+        self.tvChooseLocation.register(UINib(nibName: "AreaHeaderTVC", bundle: nil), forHeaderFooterViewReuseIdentifier: "areaheader")
+        
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
     }
+
+    
+    // MARK: - Table view data source
+    
+    public func numberOfSections(in tableView: UITableView) -> Int {
+        return self.area.count
+    }
+    
+    public func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+
+        switch section {
+        case 0:
+            if section == selectedSection && isHeaderOpen{
+                return area[section].count
+            }
+        case 1:
+            if section == selectedSection && isHeaderOpen{
+                return area[section].count
+            }
+        default:
+            return 0
+        }
+        return 0
+    }
+    
+    public func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        
+        let cellIdentifier = "AreaCuisineCell"
+        tableView.register(UINib(nibName: "AreaCuisineTableViewCell", bundle: nil), forCellReuseIdentifier: cellIdentifier)
+        let cell = tableView.dequeueReusableCell(withIdentifier: cellIdentifier) as! AreaCuisineTableViewCell!
+        
+        switch indexPath.section {
+        case 0:
+            cell?.lblName.text = area[indexPath.section][indexPath.row] as String
+        case 1:
+            cell?.lblName.text = area[indexPath.section][indexPath.row] as String
+        default:
+            cell?.lblName.text = area[indexPath.section][indexPath.row] as String
+        }
+        
+        return cell!
+    }
+    
+    
+    // MARK: - Table view data delegate
+    
+    
+    // Header
+    
+    public func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
+        
+        let header = tableView.dequeueReusableHeaderFooterView(withIdentifier: "areaheader") as! AreaHeaderTVC
+        header.section = section
+        
+        if header.section == selectedSection {
+            if header.isOpen {
+                header.btnHeader.backgroundColor = UIColor.lightGray
+                header.imgArrow.image = #imageLiteral(resourceName: "arrowdown")
+            }else{
+                header.btnHeader.backgroundColor = GREEN_COLOR
+                header.imgArrow.image = #imageLiteral(resourceName: "Arrowup")
+            }
+        }else {
+            header.btnHeader.backgroundColor = UIColor.lightGray
+            header.imgArrow.image = #imageLiteral(resourceName: "arrowdown")
+        }
+        header.btnHeader.titleLabel?.text = "Ahumadi"
+        header.delegate = self
+        header.btnHeader.layer.cornerRadius = 4
+        return header
+    }
+    
+    func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
+        return 32.0
+    }
+    
+    func tableView(_ tableView: UITableView, heightForFooterInSection section: Int) -> CGFloat {
+        return 4.0
+    }
+    
+    //MARK: - AreaHeaderTVCDelegate
+    
+    func didSelectAreaHeaderTVC(Selected: Bool, UserHeader: AreaHeaderTVC) {
+        selectedSection = UserHeader.section
+        isHeaderOpen = !isHeaderOpen
+        UserHeader.isOpen = !UserHeader.isOpen
+        
+        self.tvChooseLocation .reloadData()
+    }
+    
     //MARK: - IBAction
     
     @IBAction func onApplyArea(_ sender: Any) {
@@ -32,26 +128,6 @@ class ChooseAreaViewController: UIViewController, UITableViewDataSource, UITable
 
     }
     
-    
-    // MARK: - Table view data source
-    
-    public func numberOfSections(in tableView: UITableView) -> Int {
-        return 1
-    }
-    
-    public func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return areaList.count
-    }
-    
-    public func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        
-        let cellIdentifier = "AreaCuisineCell"
-        tableView.register(UINib(nibName: "AreaCuisineTableViewCell", bundle: nil), forCellReuseIdentifier: cellIdentifier)
-        let cell = tableView.dequeueReusableCell(withIdentifier: cellIdentifier) as! AreaCuisineTableViewCell!
-        cell?.lblName.text = areaList[indexPath.row]
-        return cell!
-    }
-
     /*
     // MARK: - Navigation
 
@@ -61,5 +137,8 @@ class ChooseAreaViewController: UIViewController, UITableViewDataSource, UITable
         // Pass the selected object to the new view controller.
     }
     */
+    
+    
+    
 
 }

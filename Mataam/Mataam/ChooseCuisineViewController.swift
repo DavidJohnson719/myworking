@@ -1,46 +1,57 @@
-//
-//  ChooseCuisineViewController.swift
-//  Mataam
-//
-//  Created by AndreszGolanski on 6/17/17.
-//  Copyright © 2017 AndreszGolanski. All rights reserved.
-//
 
 import UIKit
 
-class ChooseCuisineViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
+class ChooseCuisineViewController: UIViewController, UICollectionViewDataSource, UICollectionViewDelegate, UICollectionViewDelegateFlowLayout{
 
-    let areaList = ["All","Arabic","Asian", "Chinese"]
+    let cuisineList = ["All (94)","Arabic (16)","Asian (33)", "Chinese (25)","Arabic (16)","Asian (33)", "Chinese (25)","Arabic (16)","Asian (33)", "Chinese (25)","Arabic (16)","Asian (33)", "Chinese (25)","Arabic (16)","Asian (33)", "Chinese (25)","Arabic (16)","Asian (33)", "Chinese (25)","Arabic (16)","Asian (33)", "Chinese (25)","Arabic (16)","Asian (33)", "Chinese (25)","Arabic (16)","Asian (33)", "Chinese (25)","Arabic (16)","Asian (33)", "Chinese (25)"]
+    
+    @IBOutlet weak var cvCuisine: UICollectionView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
         let tap = UITapGestureRecognizer(target: self, action: #selector(dismissKeyboard))
         view.addGestureRecognizer(tap)
+        
+        cvCuisine!.register(UINib(nibName: "CuisineCVC", bundle: nil), forCellWithReuseIdentifier: "CuisineCVC")
+        
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
     }
     
-    // MARK: - Table view data source
+    //UICollectionViewDelegateFlowLayout methods
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumLineSpacingForSectionAt section: Int) -> CGFloat
+    {
+        
+        return 8;
+    }
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumInteritemSpacingForSectionAt section: Int) -> CGFloat
+    {
+        
+        return 1;
+    }
     
-    public func numberOfSections(in tableView: UITableView) -> Int {
+    
+    //UICollectionViewDatasource methods
+    func numberOfSectionsInCollectionView(collectionView: UICollectionView) -> Int {
+        
         return 1
     }
     
-    public func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return areaList.count
+    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int{
+        
+        return cuisineList.count
     }
     
-    public func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         
-        let cellIdentifier = "AreaCuisineCell"
-        tableView.register(UINib(nibName: "AreaCuisineTableViewCell", bundle: nil), forCellReuseIdentifier: cellIdentifier)
-        let cell = tableView.dequeueReusableCell(withIdentifier: cellIdentifier) as! AreaCuisineTableViewCell!
-        cell?.lblName.text = areaList[indexPath.row]
-        return cell!
-
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "CuisineCVC", for: indexPath) as! CuisineCVC
+        
+        cell.lblCuisine.text = cuisineList[indexPath.row]
+        
+        return cell
     }
     
     //MARK: - MyFunc
