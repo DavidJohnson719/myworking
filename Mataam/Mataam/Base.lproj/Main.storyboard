@@ -12,10 +12,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Ad View Controller-->
+        <!--AdvertismentVC-->
         <scene sceneID="z6v-l8-bGd">
             <objects>
-                <viewController storyboardIdentifier="AdVC" useStoryboardIdentifierAsRestorationIdentifier="YES" id="6l3-0V-5Vj" customClass="AdViewController" customModule="Mataam" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="AdVC" useStoryboardIdentifierAsRestorationIdentifier="YES" id="6l3-0V-5Vj" customClass="AdvertismentVC" customModule="Mataam" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="5x7-93-sma"/>
                         <viewControllerLayoutGuide type="bottom" id="wTS-yJ-u1i"/>

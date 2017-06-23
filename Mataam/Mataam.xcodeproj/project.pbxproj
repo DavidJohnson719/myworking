@@ -26,6 +26,7 @@
 		E97A7FB21EF82F5300324D2A /* CuisineCVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = E97A7FB01EF82F5300324D2A /* CuisineCVC.xib */; };
 		E97A7FB81EF87BD600324D2A /* RestaurantDetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E97A7FB71EF87BD600324D2A /* RestaurantDetailVC.swift */; };
 		E97A7FBA1EF888B800324D2A /* OrderVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E97A7FB91EF888B800324D2A /* OrderVC.swift */; };
+		E98A3C841EFD508B00CA8CAC /* AdvertismentVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E98A3C831EFD508B00CA8CAC /* AdvertismentVC.swift */; };
 		E9967BD11EF6B2E600B2EC14 /* TableViewingCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9967BCF1EF6B2E600B2EC14 /* TableViewingCollectionViewCell.swift */; };
 		E9967BD21EF6B2E600B2EC14 /* TableViewingCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E9967BD01EF6B2E600B2EC14 /* TableViewingCollectionViewCell.xib */; };
 		E9967BD81EF6CA6B00B2EC14 /* PopOverViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9967BD71EF6CA6B00B2EC14 /* PopOverViewController.swift */; };
@@ -51,7 +52,6 @@
 		E9DDF6B31EEACA9A0088E268 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9DDF6B21EEACA9A0088E268 /* LoginViewController.swift */; };
 		E9DDF6B51EEACAAC0088E268 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9DDF6B41EEACAAC0088E268 /* RegisterViewController.swift */; };
 		E9DDF6B91EEACB390088E268 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9DDF6B81EEACB390088E268 /* MainViewController.swift */; };
-		E9DDF6F81EEADDC80088E268 /* AdViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9DDF6F71EEADDC80088E268 /* AdViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -97,6 +97,7 @@
 		E97A7FB01EF82F5300324D2A /* CuisineCVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CuisineCVC.xib; sourceTree = "<group>"; };
 		E97A7FB71EF87BD600324D2A /* RestaurantDetailVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RestaurantDetailVC.swift; sourceTree = "<group>"; };
 		E97A7FB91EF888B800324D2A /* OrderVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OrderVC.swift; sourceTree = "<group>"; };
+		E98A3C831EFD508B00CA8CAC /* AdvertismentVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AdvertismentVC.swift; sourceTree = "<group>"; };
 		E9967BCF1EF6B2E600B2EC14 /* TableViewingCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewingCollectionViewCell.swift; sourceTree = "<group>"; };
 		E9967BD01EF6B2E600B2EC14 /* TableViewingCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TableViewingCollectionViewCell.xib; sourceTree = "<group>"; };
 		E9967BD71EF6CA6B00B2EC14 /* PopOverViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PopOverViewController.swift; sourceTree = "<group>"; };
@@ -128,7 +129,6 @@
 		E9DDF6B21EEACA9A0088E268 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		E9DDF6B41EEACAAC0088E268 /* RegisterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
 		E9DDF6B81EEACB390088E268 /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
-		E9DDF6F71EEADDC80088E268 /* AdViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AdViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -243,7 +243,7 @@
 				E9DDF6B21EEACA9A0088E268 /* LoginViewController.swift */,
 				E9DDF6B41EEACAAC0088E268 /* RegisterViewController.swift */,
 				E9D2D7401EEF3D8400F2FBC8 /* SmsOtpViewController.swift */,
-				E9DDF6F71EEADDC80088E268 /* AdViewController.swift */,
+				E98A3C831EFD508B00CA8CAC /* AdvertismentVC.swift */,
 				E9DDF6B81EEACB390088E268 /* MainViewController.swift */,
 				E9BAC00F1EF4B70900226050 /* ChooseAreaViewController.swift */,
 				E9BAC0111EF4B72100226050 /* ChooseCuisineViewController.swift */,
@@ -619,9 +619,9 @@
 				E97A7FB11EF82F5300324D2A /* CuisineCVC.swift in Sources */,
 				E95E87F61EFAB6BB00C2AAB2 /* AreaHeaderTVC.swift in Sources */,
 				E91163551EF9874D00191CE8 /* DeliveryRestaurantMenuTVC.swift in Sources */,
-				E9DDF6F81EEADDC80088E268 /* AdViewController.swift in Sources */,
 				E91163581EF9D28200191CE8 /* DeliveryAddToCartVC.swift in Sources */,
 				E9D2D7411EEF3D8400F2FBC8 /* SmsOtpViewController.swift in Sources */,
+				E98A3C841EFD508B00CA8CAC /* AdvertismentVC.swift in Sources */,
 				E9DDF6531EEAC9C70088E268 /* AppDelegate.swift in Sources */,
 				E95E87FF1EFB457B00C2AAB2 /* OrderSummaryTVC.swift in Sources */,
 				E97A7FBA1EF888B800324D2A /* OrderVC.swift in Sources */,
