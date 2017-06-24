@@ -3,6 +3,7 @@ import UIKit
 
 class MainViewController: UIViewController {
     
+    var serviceType = 1
     
     @IBOutlet weak var imgvMain: UIImageView!
     
@@ -56,9 +57,22 @@ class MainViewController: UIViewController {
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
     }
     
+    override func viewWillAppear(_ animated: Bool) {
+        switch self.serviceType {
+        case 1:
+            self.showDeliveryView()
+        case 2:
+            self.showPickupView()
+        case 3:
+            self.showReservationView()
+        case 4:
+            self.showCateringView()
+        default:
+            self.showDeliveryView()
+        }
+    }
 
     // MARK: - IBActions
     @IBAction func onMenu(_ sender: Any) {
@@ -66,62 +80,22 @@ class MainViewController: UIViewController {
     }
     
     @IBAction func onBtnDelivery(_ sender: Any) {
-        updateScreen(no: 1)
-        btnDelivery.setBackgroundImage(UIImage(named: "btn-delivery-pressed"), for: UIControlState.normal)
-        btnPickup.setBackgroundImage(UIImage(named: "btn-pickup"), for: UIControlState.normal)
-        btnReservation.setBackgroundImage(UIImage(named: "btn-reservation"), for: UIControlState.normal)
-        btnCatering.setBackgroundImage(UIImage(named: "btn-catering"), for: UIControlState.normal)
-        imgvMain.image = UIImage(named: "main-delivery")
-        stVDelivery.isHidden = false
-        stVCatering.isHidden = true
-        stVReservation.isHidden = true
-        stVPickup.isHidden = true
-        vtransparent1.isHidden = false
-        vtransparent2.isHidden = true
-
+        self.serviceType = 1
+        self.showDeliveryView()
     }
     @IBAction func onBtnPickup(_ sender: Any) {
-        updateScreen(no: 2)
-        btnPickup.setBackgroundImage(UIImage(named: "btn-pickup-pressed"), for: UIControlState.normal)
-        btnDelivery.setBackgroundImage(UIImage(named: "btn-delivery"), for: UIControlState.normal)
-        btnReservation.setBackgroundImage(UIImage(named: "btn-reservation"), for: UIControlState.normal)
-        btnCatering.setBackgroundImage(UIImage(named: "btn-catering"), for: UIControlState.normal)
-        imgvMain.image = UIImage(named: "main-pickup")
-        stVDelivery.isHidden = true
-        stVCatering.isHidden = true
-        stVReservation.isHidden = true
-        stVPickup.isHidden = false
-        vtransparent1.isHidden = false
-        vtransparent2.isHidden = true
+        self.serviceType = 2
+        self.showPickupView()
     }
     @IBAction func onBtnReservation(_ sender: Any) {
-        updateScreen(no: 3)
-        
-        btnReservation.setBackgroundImage(UIImage(named: "btn-reservation-pressed"), for: UIControlState.normal)
-        btnDelivery.setBackgroundImage(UIImage(named: "btn-delivery"), for: UIControlState.normal)
-        btnPickup.setBackgroundImage(UIImage(named: "btn-pickup"), for: UIControlState.normal)
-        btnCatering.setBackgroundImage(UIImage(named: "btn-catering"), for: UIControlState.normal)
-        imgvMain.image = UIImage(named: "main-reservation")
-        stVDelivery.isHidden = true
-        stVCatering.isHidden = true
-        stVReservation.isHidden = false
-        stVPickup.isHidden = true
-        vtransparent1.isHidden = true
-        vtransparent2.isHidden = false
+        self.serviceType = 3
+
+        self.showReservationView()
     }
     @IBAction func onBtnCatering(_ sender: Any) {
-        updateScreen(no: 4)
-        btnCatering.setBackgroundImage(UIImage(named: "btn-catering-pressed"), for: UIControlState.normal)
-        btnDelivery.setBackgroundImage(UIImage(named: "btn-delivery"), for: UIControlState.normal)
-        btnPickup.setBackgroundImage(UIImage(named: "btn-pickup"), for: UIControlState.normal)
-        btnReservation.setBackgroundImage(UIImage(named: "btn-reservation"), for: UIControlState.normal)
-        imgvMain.image = UIImage(named: "main-catering")
-        stVDelivery.isHidden = true
-        stVCatering.isHidden = false
-        stVReservation.isHidden = true
-        stVPickup.isHidden = true
-        vtransparent1.isHidden = true
-        vtransparent2.isHidden = false
+        self.serviceType = 4
+
+        self.showCateringView()
     }
     
     @IBAction func onSearchDelivery(_ sender: Any) {
@@ -213,14 +187,70 @@ class MainViewController: UIViewController {
         performSegue(withIdentifier: "cuisine", sender: nil)
     }
 
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+    func showDeliveryView () {
+        updateScreen(no: 1)
+        btnDelivery.setBackgroundImage(UIImage(named: "btn-delivery-pressed"), for: UIControlState.normal)
+        btnPickup.setBackgroundImage(UIImage(named: "btn-pickup"), for: UIControlState.normal)
+        btnReservation.setBackgroundImage(UIImage(named: "btn-reservation"), for: UIControlState.normal)
+        btnCatering.setBackgroundImage(UIImage(named: "btn-catering"), for: UIControlState.normal)
+        imgvMain.image = UIImage(named: "main-delivery")
+        stVDelivery.isHidden = false
+        stVCatering.isHidden = true
+        stVReservation.isHidden = true
+        stVPickup.isHidden = true
+        vtransparent1.isHidden = false
+        vtransparent2.isHidden = true
     }
-    */
+    func showPickupView () {
+        updateScreen(no: 2)
+        btnPickup.setBackgroundImage(UIImage(named: "btn-pickup-pressed"), for: UIControlState.normal)
+        btnDelivery.setBackgroundImage(UIImage(named: "btn-delivery"), for: UIControlState.normal)
+        btnReservation.setBackgroundImage(UIImage(named: "btn-reservation"), for: UIControlState.normal)
+        btnCatering.setBackgroundImage(UIImage(named: "btn-catering"), for: UIControlState.normal)
+        imgvMain.image = UIImage(named: "main-pickup")
+        stVDelivery.isHidden = true
+        stVCatering.isHidden = true
+        stVReservation.isHidden = true
+        stVPickup.isHidden = false
+        vtransparent1.isHidden = false
+        vtransparent2.isHidden = true
+    }
+    func showReservationView () {
+        updateScreen(no: 3)
+        btnReservation.setBackgroundImage(UIImage(named: "btn-reservation-pressed"), for: UIControlState.normal)
+        btnDelivery.setBackgroundImage(UIImage(named: "btn-delivery"), for: UIControlState.normal)
+        btnPickup.setBackgroundImage(UIImage(named: "btn-pickup"), for: UIControlState.normal)
+        btnCatering.setBackgroundImage(UIImage(named: "btn-catering"), for: UIControlState.normal)
+        imgvMain.image = UIImage(named: "main-reservation")
+        stVDelivery.isHidden = true
+        stVCatering.isHidden = true
+        stVReservation.isHidden = false
+        stVPickup.isHidden = true
+        vtransparent1.isHidden = true
+        vtransparent2.isHidden = false
+    }
+    func showCateringView () {
+        updateScreen(no: 4)
+        btnCatering.setBackgroundImage(UIImage(named: "btn-catering-pressed"), for: UIControlState.normal)
+        btnDelivery.setBackgroundImage(UIImage(named: "btn-delivery"), for: UIControlState.normal)
+        btnPickup.setBackgroundImage(UIImage(named: "btn-pickup"), for: UIControlState.normal)
+        btnReservation.setBackgroundImage(UIImage(named: "btn-reservation"), for: UIControlState.normal)
+        imgvMain.image = UIImage(named: "main-catering")
+        stVDelivery.isHidden = true
+        stVCatering.isHidden = false
+        stVReservation.isHidden = true
+        stVPickup.isHidden = true
+        vtransparent1.isHidden = true
+        vtransparent2.isHidden = false
+    }
+    //MARK: - Navigation
+
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "search" {
+            let searchVC = segue.destination as? SearchMainViewController
+            searchVC?.serviceType = self.serviceType
+        }
+    }
+
 
 }

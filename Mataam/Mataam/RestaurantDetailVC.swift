@@ -16,6 +16,7 @@ class RestaurantDetailVC: UIViewController, UITableViewDataSource, UITableViewDe
     @IBOutlet weak var tvReviews: UITableView!
     @IBOutlet weak var lblReviews: UILabel!
     @IBOutlet weak var stvReviews: UIView!
+    @IBOutlet weak var btnAddReview: UIButton!
     
     var selectedSection = 1;
     var isHeaderOpen = true
@@ -35,6 +36,7 @@ class RestaurantDetailVC: UIViewController, UITableViewDataSource, UITableViewDe
 
     //MARK: - MyFunc
     func initVC() {
+        self.btnAddReview.layer.cornerRadius = CGFloat(Corner_radious2)
         self.updateViewFromSegIndex (index: 0)
     }
     
@@ -197,6 +199,7 @@ class RestaurantDetailVC: UIViewController, UITableViewDataSource, UITableViewDe
         self.performSegue(withIdentifier: "order", sender: self)
     }
     @IBAction func onAddReview(_ sender: Any) {
+        self.performSegue(withIdentifier: "rate", sender: self)
     }
     
     

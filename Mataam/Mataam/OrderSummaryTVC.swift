@@ -1,10 +1,3 @@
-//
-//  OrderSummaryTVC.swift
-//  Mataam
-//
-//  Created by AndreszGolanski on 6/22/17.
-//  Copyright © 2017 AndreszGolanski. All rights reserved.
-//
 
 import UIKit
 

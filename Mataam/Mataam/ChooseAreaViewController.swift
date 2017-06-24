@@ -4,6 +4,8 @@ import UIKit
 class ChooseAreaViewController: UIViewController, UITableViewDataSource, UITableViewDelegate, AreaHeaderTVCDelegate {
 
     @IBOutlet weak var tvChooseLocation: UITableView!
+    @IBOutlet weak var btnApply: UIButton!
+    @IBOutlet weak var btnCancel: UIButton!
 
     
     let areaList1 = ["Ahmadi","Al Julayah","Abu Halifa", "Al Julayah - Azvarur Sulah","Al Julayah"]
@@ -20,14 +22,19 @@ class ChooseAreaViewController: UIViewController, UITableViewDataSource, UITable
         self.area.append(areaList2 as [NSString])
         
         self.tvChooseLocation.register(UINib(nibName: "AreaHeaderTVC", bundle: nil), forHeaderFooterViewReuseIdentifier: "areaheader")
-        
+        self.initUI()
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
     }
 
-    
+    //MARK: - MyFunc
+    func initUI() {
+        self.btnApply.layer.cornerRadius = CGFloat(Corner_radious2)
+        self.btnCancel.layer.cornerRadius = CGFloat(Corner_radious2)
+    }
+
     // MARK: - Table view data source
     
     public func numberOfSections(in tableView: UITableView) -> Int {

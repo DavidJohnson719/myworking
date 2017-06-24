@@ -77,9 +77,6 @@
                             <constraint firstItem="tGD-LY-z8h" firstAttribute="leading" secondItem="zeZ-LV-lR2" secondAttribute="leading" id="xA7-jA-Szd"/>
                         </constraints>
                     </stackView>
-                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="deliverystars" translatesAutoresizingMaskIntoConstraints="NO" id="p3G-hY-ie1">
-                        <rect key="frame" x="198" y="8" width="76" height="14"/>
-                    </imageView>
                     <view userInteractionEnabled="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Afg-PE-ynj" customClass="CosmosView" customModule="Cosmos">
                         <rect key="frame" x="198" y="9" width="76" height="13"/>
                         <constraints>
@@ -128,7 +125,6 @@
                     </label>
                 </subviews>
                 <constraints>
-                    <constraint firstItem="p3G-hY-ie1" firstAttribute="bottom" secondItem="guS-C0-P9L" secondAttribute="bottom" id="8rG-dN-HBf"/>
                     <constraint firstItem="cBb-h6-BWX" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" id="96k-K5-ss0"/>
                     <constraint firstItem="zeZ-LV-lR2" firstAttribute="leading" secondItem="hCr-op-bNt" secondAttribute="trailing" constant="8" id="KGN-JW-5x5"/>
                     <constraint firstItem="2t8-ua-HwP" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="14" id="KLo-qq-0Jl"/>
@@ -137,11 +133,7 @@
                     <constraint firstItem="zeZ-LV-lR2" firstAttribute="leading" secondItem="hCr-op-bNt" secondAttribute="trailing" constant="8" id="Tgt-Qq-fBR"/>
                     <constraint firstItem="Afg-PE-ynj" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="1" id="Vij-rd-wRg"/>
                     <constraint firstAttribute="trailing" secondItem="2t8-ua-HwP" secondAttribute="trailing" constant="6" id="Vx7-Xv-JMM"/>
-                    <constraint firstItem="2t8-ua-HwP" firstAttribute="leading" secondItem="p3G-hY-ie1" secondAttribute="trailing" constant="8" symbolic="YES" id="W3D-az-4ET"/>
-                    <constraint firstItem="p3G-hY-ie1" firstAttribute="top" secondItem="guS-C0-P9L" secondAttribute="top" id="ZDp-9X-RRU"/>
-                    <constraint firstItem="p3G-hY-ie1" firstAttribute="leading" secondItem="guS-C0-P9L" secondAttribute="trailing" constant="8" id="ctv-yX-kRo"/>
                     <constraint firstAttribute="bottom" secondItem="2t8-ua-HwP" secondAttribute="bottom" constant="13.5" id="dfo-cT-yFC"/>
-                    <constraint firstItem="zeZ-LV-lR2" firstAttribute="top" secondItem="p3G-hY-ie1" secondAttribute="bottom" constant="3" id="eNa-Y7-Myp"/>
                     <constraint firstItem="guS-C0-P9L" firstAttribute="leading" secondItem="cBb-h6-BWX" secondAttribute="trailing" constant="8" id="hUi-DP-8zZ"/>
                     <constraint firstItem="zeZ-LV-lR2" firstAttribute="top" secondItem="Afg-PE-ynj" secondAttribute="bottom" constant="3" id="jVD-lB-3Pu"/>
                     <constraint firstAttribute="bottom" secondItem="hCr-op-bNt" secondAttribute="bottom" constant="5.5" id="kQb-tB-bhe"/>
@@ -150,17 +142,11 @@
                     <constraint firstItem="2t8-ua-HwP" firstAttribute="leading" secondItem="Afg-PE-ynj" secondAttribute="trailing" constant="8" id="uFe-rk-C9z"/>
                     <constraint firstItem="2t8-ua-HwP" firstAttribute="leading" secondItem="zeZ-LV-lR2" secondAttribute="trailing" constant="8" id="z6T-y1-Zir"/>
                 </constraints>
-                <variation key="default">
-                    <mask key="subviews">
-                        <exclude reference="p3G-hY-ie1"/>
-                    </mask>
-                </variation>
             </tableViewCellContentView>
             <inset key="separatorInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
         </tableViewCell>
     </objects>
     <resources>
-        <image name="deliverystars" width="40" height="6"/>
         <image name="fooditem" width="88" height="88"/>
         <image name="greenadd" width="32" height="32"/>
     </resources>

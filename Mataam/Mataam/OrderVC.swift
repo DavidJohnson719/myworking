@@ -24,11 +24,10 @@ class OrderVC: UIViewController, UITableViewDataSource, UITableViewDelegate {
     
     public func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
-        let cellIdentifier = "AreaCuisineCell"
-        tableView.register(UINib(nibName: "AreaCuisineTableViewCell", bundle: nil), forCellReuseIdentifier: cellIdentifier)
-        let cell = tableView.dequeueReusableCell(withIdentifier: cellIdentifier) as! AreaCuisineTableViewCell!
+        let cellIdentifier = "ordertvc"
+        tableView.register(UINib(nibName: "OrderSummaryTVC", bundle: nil), forCellReuseIdentifier: cellIdentifier)
+        let cell = tableView.dequeueReusableCell(withIdentifier: cellIdentifier) as! OrderSummaryTVC!
 
-        
         return cell!
     }
 

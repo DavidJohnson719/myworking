@@ -6,6 +6,8 @@ class ChooseCuisineViewController: UIViewController, UICollectionViewDataSource,
     let cuisineList = ["All (94)","Arabic (16)","Asian (33)", "Chinese (25)","Arabic (16)","Asian (33)", "Chinese (25)","Arabic (16)","Asian (33)", "Chinese (25)","Arabic (16)","Asian (33)", "Chinese (25)","Arabic (16)","Asian (33)", "Chinese (25)","Arabic (16)","Asian (33)", "Chinese (25)","Arabic (16)","Asian (33)", "Chinese (25)","Arabic (16)","Asian (33)", "Chinese (25)","Arabic (16)","Asian (33)", "Chinese (25)","Arabic (16)","Asian (33)", "Chinese (25)"]
     
     @IBOutlet weak var cvCuisine: UICollectionView!
+    @IBOutlet weak var btnApply: UIButton!
+    @IBOutlet weak var btnCancel: UIButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -15,6 +17,7 @@ class ChooseCuisineViewController: UIViewController, UICollectionViewDataSource,
         
         cvCuisine!.register(UINib(nibName: "CuisineCVC", bundle: nil), forCellWithReuseIdentifier: "CuisineCVC")
         
+        self.initUI()
     }
 
     override func didReceiveMemoryWarning() {
@@ -57,6 +60,10 @@ class ChooseCuisineViewController: UIViewController, UICollectionViewDataSource,
     //MARK: - MyFunc
     func dismissKeyboard() {
         view.endEditing(true)
+    }
+    func initUI() {
+        self.btnApply.layer.cornerRadius = CGFloat(Corner_radious2)
+        self.btnCancel.layer.cornerRadius = CGFloat(Corner_radious2)
     }
     //MARK: - IBAction
     

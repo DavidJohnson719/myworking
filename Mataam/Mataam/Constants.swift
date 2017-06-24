@@ -9,6 +9,12 @@ let RED_COLOR = UIColor(red: 255.0/255.0, green: 0.0/255.0, blue: 0.0/255.0, alp
 let ORANGE_COLOR = UIColor(red: 255.0/255.0, green: 87.0/255.0, blue: 0.0/255.0, alpha: 1.0)
 let BLUE_COLOR = UIColor(red: 0.0/255.0, green: 172.0/255.0, blue: 255.0/255.0, alpha: 1.0)
 
+//Corner radious
+
+let Corner_radious1 = 2
+let Corner_radious2 = 4
+let Corner_radious3 = 6
+
 //Auth0
 let AUTH0_CLIENT_ID = "f47lSVZ0FriC6L2I6FEmrvHXavNWs0NE"
 let AUTH0_CONNECTION = "monacoapp-users"
