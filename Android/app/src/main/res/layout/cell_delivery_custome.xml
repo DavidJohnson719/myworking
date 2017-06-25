@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="75dp"
+    android:orientation="vertical"
+    >
+
+    <LinearLayout
+        android:id="@+id/delivery_custom_img_view"
+        android:layout_width="wrap_content"
+        android:layout_height="75dp"
+        android:gravity="center"
+        android:layout_marginLeft="@dimen/gap_height"
+        android:layout_marginRight="@dimen/gap_height"
+        >
+        <ImageView
+            android:id="@+id/cell_menu_img"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/temp1"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_toLeftOf="@+id/delivery_custom_add_view"
+        android:layout_toRightOf="@+id/delivery_custom_img_view"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:weightSum="3"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            >
+
+            <TextView
+                android:id="@+id/cell_menu_txt_title"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="Chicken Wings"
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/text_size"
+                android:gravity="center"/>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:gravity="center">
+                <ImageView
+                    android:layout_width="10dp"
+                    android:layout_height="10dp"
+                    android:layout_marginRight="5dp"
+                    android:src="@drawable/star_green"/>
+                <ImageView
+                    android:layout_width="10dp"
+                    android:layout_height="10dp"
+                    android:layout_marginRight="5dp"
+                    android:src="@drawable/star_green"/>
+                <ImageView
+                    android:layout_width="10dp"
+                    android:layout_height="10dp"
+                    android:layout_marginRight="5dp"
+                    android:src="@drawable/star_green"/>
+                <ImageView
+                    android:layout_width="10dp"
+                    android:layout_height="10dp"
+                    android:layout_marginRight="5dp"
+                    android:src="@drawable/star_green"/>
+                <ImageView
+                    android:layout_width="10dp"
+                    android:layout_height="10dp"
+                    android:src="@drawable/star_green_no"/>
+            </LinearLayout>
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="2"
+            android:weightSum="10">
+            <TextView
+                android:id="@+id/cell_menu_subTitle"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="7"
+                android:textSize="8dp"
+                android:textColor="@color/text_color"
+                android:text="Big Juicy Wings in Barbecue, Hot or Regular flavor.\nGreat Choice\nTry it"/>
+
+            <TextView
+                android:id="@+id/cell_menu_price"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="3"
+                android:text="KD\n4.500"
+                android:textSize="10dp"
+                android:textColor="@color/text_color"
+                android:gravity="right"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/delivery_custom_add_view"
+        android:layout_width="wrap_content"
+        android:layout_height="75dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="@dimen/gap_height"
+        android:layout_marginLeft="@dimen/gap_height"
+        android:gravity="center"
+        >
+        <ImageView
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:src="@drawable/btn_add_green"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@android:color/darker_gray"
+        android:layout_alignParentBottom="true"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"></LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="75dp">
+        <LinearLayout
+            android:id="@+id/place_img_view"
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:layout_margin="10dp"
+            >
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/temp1"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_toLeftOf="@+id/place_add_view"
+            android:layout_toRightOf="@+id/place_img_view"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:weightSum="3"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="Chicken Wings"
+                    android:textColor="@android:color/black"
+                    android:textSize="@dimen/text_size"
+                    android:gravity="center"/>
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="2"
+                android:weightSum="10">
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="10"
+                    android:textSize="8dp"
+                    android:textColor="@color/text_color"
+                    android:text="Big Juicy Wings in Barbecue"/>
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/place_add_view"
+            android:layout_width="80dp"
+            android:layout_height="75dp"
+            android:layout_marginRight="@dimen/gap_height"
+            android:layout_alignParentRight="true"
+            android:orientation="vertical"
+            >
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="15dp"
+                android:layout_marginTop="5dp"
+                android:src="@drawable/icon_open"
+                android:layout_alignParentRight="true"/>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:layout_alignParentRight="true">
+                <ImageView
+                    android:layout_width="15dp"
+                    android:layout_height="15dp"
+                    android:src="@drawable/small_combined_shape_green"/>
+
+                <ImageView
+                    android:layout_width="15dp"
+                    android:layout_height="15dp"
+                    android:src="@drawable/small_combined_shape_red"/>
+
+                <ImageView
+                    android:layout_width="15dp"
+                    android:layout_height="15dp"
+                    android:src="@drawable/small_combined_shape_blue"/>
+
+                <ImageView
+                    android:layout_width="15dp"
+                    android:layout_height="15dp"
+                    android:src="@drawable/small_combined_shape_orange"/>
+
+            </LinearLayout>
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@drawable/line1"></LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/title_bar_height"
+        android:orientation="horizontal"
+        android:weightSum="2">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="@dimen/title_bar_height"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:weightSum="2"
+            android:background="@color/background_color"
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+
+                android:layout_marginRight="@dimen/gap_height"
+                android:background="@color/background_color">
+                <ImageView
+                    android:layout_width="15dp"
+                    android:layout_height="15dp"
+                    android:src="@drawable/loc_green"
+                    android:layout_marginLeft="@dimen/gap_height"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="Abdullah Al-Salem"
+                    android:gravity="center"
+                    android:textSize="10dp"
+                    android:textColor="@color/text_color"
+                    android:layout_marginLeft="5dp"
+                    android:background="@color/background_color"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:layout_marginLeft="@dimen/gap_height"
+                android:layout_marginRight="@dimen/gap_height"
+                android:background="@color/background_color">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center">
+                    <ImageView
+                        android:layout_width="10dp"
+                        android:layout_height="10dp"
+                        android:src="@drawable/star_green"
+                        android:layout_marginRight="2dp"/>
+                    <ImageView
+                        android:layout_width="10dp"
+                        android:layout_height="10dp"
+                        android:src="@drawable/star_green"
+                        android:layout_marginRight="2dp"/>
+                    <ImageView
+                        android:layout_width="10dp"
+                        android:layout_height="10dp"
+                        android:src="@drawable/star_green"
+                        android:layout_marginRight="2dp"/>
+                    <ImageView
+                        android:layout_width="10dp"
+                        android:layout_height="10dp"
+                        android:src="@drawable/star_green"
+                        android:layout_marginRight="2dp"/>
+                    <ImageView
+                        android:layout_width="10dp"
+                        android:layout_height="10dp"
+                        android:src="@drawable/star_green"
+                        android:layout_marginRight="2dp"/>
+
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="(89234)"
+                    android:gravity="center_vertical|right"
+                    android:textSize="10dp"
+                    android:textColor="@color/text_color"
+                    android:background="@color/background_color"/>
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:weightSum="2"
+            android:orientation="vertical"
+            android:gravity="center_vertical|right"
+            android:layout_marginRight="@dimen/gap_height">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:text="Working hours(today)"
+                android:textSize="10dp"
+                android:textColor="@color/text_color"
+                android:gravity="center_vertical|right"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:text="6:00AM -5:00AM"
+                android:textSize="@dimen/text_size"
+                android:textColor="@color/text_color"
+                android:gravity="center_vertical|right"/>
+        </LinearLayout>
+
+    </LinearLayout>
+</LinearLayout>

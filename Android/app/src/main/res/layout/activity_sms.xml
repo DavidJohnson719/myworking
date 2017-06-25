@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/rectangle33x"
+    android:orientation="vertical"
+    android:gravity="bottom"
+    tools:context="mataam.com.mataam.smsActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@android:color/white"
+                android:textSize="14dp"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:text="Mataam has sent an SMS with\na code to your phone number"
+                android:layout_margin="15dp"/>
+
+            <EditText
+                android:id="@+id/sms_txt_code"
+                android:layout_width="match_parent"
+                android:layout_height="44dp"
+                android:background="@drawable/corner_radius_white"
+                android:textSize="14dp"
+                android:textColor="@android:color/black"
+                android:layout_margin="15dp"
+                android:paddingLeft="15dp"
+                android:hint="SMS CODE"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/button_height"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginBottom="15dp"
+                android:background="@drawable/btn_login">
+                <TextView
+                    android:id="@+id/sms_txt_apply"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="APPLY"
+                    android:textColor="@android:color/white"
+                    android:textSize="14dp"
+                    android:textStyle="bold"
+                    android:gravity="center"/>
+            </LinearLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="bottom">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="68dp"
+            android:gravity="center">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:textColor="@android:color/white"
+                android:textSize="14dp"
+                android:textStyle="bold"
+                android:text="Haven't received an SMS?"
+                android:gravity="center"
+                android:layout_marginLeft="15dp"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/button_height"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginBottom="15dp"
+            android:background="@drawable/btn_register">
+            <TextView
+                android:id="@+id/sms_txt_resend"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="RESEND CODE"
+                android:textColor="@android:color/white"
+                android:textStyle="bold"
+                android:textSize="14dp"
+                android:gravity="center"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/store_detail_topView"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/title_bar_height"
+        android:background="@android:color/transparent"
+        >
+        <TextView
+            android:id="@+id/store_detail_top_title"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Register new account"
+            android:textStyle="bold"
+            android:textSize="17dp"
+            android:textColor="@android:color/white"
+            android:gravity="center"
+            />
+
+        <LinearLayout
+            android:id="@+id/sms_back"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:gravity="center">
+            <ImageView
+                android:layout_width="22dp"
+                android:layout_height="22dp"
+                android:src="@drawable/back3x"/>
+        </LinearLayout>
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

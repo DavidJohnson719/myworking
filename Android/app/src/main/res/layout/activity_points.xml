@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_color"
+    tools:context="mataam.com.mataam.PointsActivity">
+
+    <RelativeLayout
+        android:id="@+id/point_topView"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/title_bar_height"
+        android:background="@color/colorGreen"
+        >
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="My Points"
+            android:textColor="@android:color/white"
+            android:textSize="14dp"
+            android:gravity="center"/>
+        <LinearLayout
+            android:id="@+id/point_back"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:layout_marginLeft="@dimen/gap_height">
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:src="@drawable/back3x"
+                android:scaleType="fitCenter"/>
+        </LinearLayout>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/point_middle_view"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_below="@+id/point_topView"
+        android:layout_margin="@dimen/gap_height"
+        android:background="@drawable/balance_bg"
+        android:orientation="vertical"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:weightSum="3">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:text="Mataam Points Balance"
+            android:textSize="@dimen/text_size"
+            android:textColor="@color/colorGreen"
+            android:gravity="center"
+            />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:weightSum="2">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="Gained:"
+                    android:textSize="@dimen/text_size"
+                    android:textColor="@android:color/black"
+                    android:gravity="center_vertical|right"
+                    android:layout_marginRight="@dimen/gap_height"
+                    />
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="10"
+                    android:textSize="@dimen/text_size"
+                    android:textColor="@color/colorGreen"
+                    android:gravity="center_vertical|left"
+                    />
+            </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:weightSum="2">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="Used:"
+                android:textSize="@dimen/text_size"
+                android:textColor="@android:color/black"
+                android:gravity="center_vertical|right"
+                android:layout_marginRight="@dimen/gap_height"
+                />
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="120"
+                android:textSize="@dimen/text_size"
+                android:textColor="@color/colorGreen"
+                android:gravity="center_vertical|left"
+                />
+        </LinearLayout>
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/point_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/point_middle_view"
+        android:divider="@android:color/darker_gray"
+        android:dividerHeight="1dp"
+        android:footerDividersEnabled="true"></ListView>
+
+</RelativeLayout>

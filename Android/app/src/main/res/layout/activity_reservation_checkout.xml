@@ -1,0 +1,611 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_color"
+    tools:context="mataam.com.mataam.ReservationCheckoutActivity">
+
+    <RelativeLayout
+        android:id="@+id/reservation_checkout_topView"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/title_bar_height"
+        android:background="@color/colorRed"
+        >
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Checkout"
+            android:textSize="17dp"
+            android:fontFamily="sans-serif-medium"
+            android:textColor="@android:color/white"
+            android:gravity="center"
+            />
+
+        <LinearLayout
+            android:id="@+id/checkout_back"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:gravity="center">
+            <ImageView
+                android:layout_width="22dp"
+                android:layout_height="22dp"
+                android:src="@drawable/back3x"/>
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/reservation_checkout_topView">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/gap_height"
+                android:text="Domino's Pizza"
+                android:textSize="14dp"
+                android:textColor="@color/text_color"
+                android:textStyle="bold"
+                android:gravity="center"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:layout_marginLeft="@dimen/gap_height"
+                android:layout_marginRight="@dimen/gap_height">
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="match_parent"
+                    android:text="16th Februray 2017"
+                    android:textSize="14dp"
+                    android:textColor="@color/text_color"/>
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="match_parent"
+                    android:text="2 persons x KWD\n15.000"
+                    android:textSize="14dp"
+                    android:textColor="@color/text_color"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@drawable/line1"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"></LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:layout_marginLeft="@dimen/gap_height"
+                android:layout_marginRight="@dimen/gap_height"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Leave a note for restaurant:"
+                    android:textSize="@dimen/text_size"
+                    android:textColor="@color/text_color"
+                    android:layout_marginBottom="5dp"
+                    />
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:hint="eg. if you have a food allergy or a request for driver."
+                    android:textSize="@dimen/text_size"
+                    android:textColor="@color/text_color"
+                    android:background="@drawable/empty"
+                    android:gravity="top"
+                    android:paddingLeft="5dp"
+                    />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@drawable/line1"
+                android:layout_marginTop="5dp"></LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="2"
+                android:layout_margin="@dimen/gap_height">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:id="@+id/reservation_top_ch1"
+                        android:layout_width="match_parent"
+                        android:layout_height="20dp"
+                        android:gravity="center_vertical"
+                        android:layout_marginBottom="@dimen/gap_height">
+
+                        <ImageView
+                            android:id="@+id/reservation_top_img1"
+                            android:layout_width="15dp"
+                            android:layout_height="15dp"
+                            android:src="@drawable/check_green" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="@dimen/gap_height"
+                            android:gravity="center_vertical"
+                            android:text="Redeem Coupon"
+                            android:textColor="@color/text_color"
+                            android:textSize="14dp"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/reservation_top_ch2"
+                        android:layout_width="match_parent"
+                        android:layout_height="20dp"
+                        android:gravity="center_vertical"
+                        android:layout_marginBottom="@dimen/gap_height">
+
+                        <ImageView
+                            android:id="@+id/reservation_top_img2"
+                            android:layout_width="15dp"
+                            android:layout_height="15dp"
+                            android:src="@drawable/check_green" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="@dimen/gap_height"
+                            android:gravity="center_vertical"
+                            android:text="Loyalty Points"
+                            android:textColor="@color/text_color"
+                            android:textSize="14dp"/>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:id="@+id/reservation_top_ch3"
+                        android:layout_width="match_parent"
+                        android:layout_height="20dp"
+                        android:gravity="center_vertical"
+                        android:layout_marginBottom="@dimen/gap_height">
+
+                        <ImageView
+                            android:id="@+id/reservation_top_img3"
+                            android:layout_width="15dp"
+                            android:layout_height="15dp"
+                            android:src="@drawable/check_green" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="@dimen/gap_height"
+                            android:gravity="center_vertical"
+                            android:text="Mataam Points"
+                            android:textColor="@color/text_color"
+                            android:textSize="14dp"/>
+                    </LinearLayout>
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:weightSum="2"
+                    android:orientation="vertical"
+                    android:layout_marginLeft="@dimen/gap_height"
+                    android:layout_marginBottom="@dimen/gap_height"
+                    >
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+
+                        android:layout_marginBottom="@dimen/gap_height"
+                        >
+                        <EditText
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:hint="Insert coupon code"
+                            android:textSize="@dimen/text_size"
+                            android:textColor="@color/text_color"
+                            android:gravity="center"
+                            android:background="@drawable/corner_radius"
+                            />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:background="@color/btn_cancel_color"
+
+                        >
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:text="APPLY"
+                            android:textSize="14dp"
+                            android:textColor="@android:color/white"
+                            android:textStyle="bold"
+                            android:background="@drawable/btn_gray"
+                            android:gravity="center"
+                            />
+                    </LinearLayout>
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:layout_marginLeft="@dimen/gap_height"
+                android:layout_marginRight="@dimen/gap_height"
+                android:weightSum="2"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@color/colorOrange"
+                    android:orientation="vertical"
+                    android:layout_marginRight="15dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_margin="1dp"
+                        android:background="@android:color/white"
+                        android:weightSum="3"
+                        android:orientation="vertical"
+                        >
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="1"
+                            android:text="Loyalty Points:"
+                            android:textSize="@dimen/text_size"
+                            android:textColor="@color/colorOrange"
+                            android:background="@android:color/white"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginTop="5dp"/>
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="1"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginRight="5dp">
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:text="Gained/Used"
+                                android:textSize="10dp"
+                                android:textColor="@color/colorOrange"/>
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:text="35pt."
+                                android:textSize="10dp"
+                                android:textColor="@color/colorOrange"
+                                android:layout_alignParentRight="true"/>
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="1"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginRight="5dp">
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:text="Balance"
+                                android:textSize="10dp"
+                                android:textColor="@color/colorOrange"/>
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:text="35pt."
+                                android:textSize="10dp"
+                                android:textColor="@color/colorOrange"
+                                android:layout_alignParentRight="true"/>
+                        </RelativeLayout>
+                    </LinearLayout>
+
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@color/colorOrange"
+                    android:orientation="vertical"
+                    >
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_margin="1dp"
+                        android:background="@android:color/white"
+                        android:weightSum="3"
+                        android:orientation="vertical"
+                        >
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="1"
+                            android:text="Mataam Points:"
+                            android:textSize="@dimen/text_size"
+                            android:textColor="@color/colorOrange"
+                            android:background="@android:color/white"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginTop="5dp"/>
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="1"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginRight="5dp">
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:text="Gained/Used"
+                                android:textSize="10dp"
+                                android:textColor="@color/colorOrange"/>
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:text="35pt."
+                                android:textSize="10dp"
+                                android:textColor="@color/colorOrange"
+                                android:layout_alignParentRight="true"/>
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="1"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginRight="5dp">
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:text="Balance"
+                                android:textSize="10dp"
+                                android:textColor="@color/colorOrange"/>
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:text="35pt."
+                                android:textSize="10dp"
+                                android:textColor="@color/colorOrange"
+                                android:layout_alignParentRight="true"/>
+                        </RelativeLayout>
+                    </LinearLayout>
+
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="@dimen/gap_height"
+                android:background="@drawable/line1"></LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/gap_height"
+                android:layout_marginLeft="@dimen/gap_height"
+                android:orientation="vertical"
+                >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="20dp"
+                    android:text="Payment:"
+                    android:textColor="@color/text_color"
+                    android:textSize="@dimen/text_size"
+                    android:gravity="center"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"/>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:text="Total amount:"
+                        android:textColor="@color/text_color"
+                        android:textSize="16dp"
+                        android:gravity="center"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:text="KD 6.250"
+                        android:textColor="@color/text_color"
+                        android:textSize="16dp"
+                        android:gravity="center"
+                        android:layout_alignParentRight="true"/>
+
+                </RelativeLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/gap_height"
+                android:layout_marginLeft="@dimen/gap_height"
+                android:orientation="vertical"
+                >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="20dp"
+                    android:text="Payment method:"
+                    android:textSize="@dimen/text_size"
+                    android:textColor="@color/text_color"
+                    android:gravity="center"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"/>
+                <LinearLayout
+                    android:id="@+id/reservation_bottom_ch1"
+                    android:layout_width="match_parent"
+                    android:layout_height="20dp"
+                    android:layout_marginBottom="10dp">
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent">
+                        <ImageView
+                            android:id="@+id/reservation_bottom_img1"
+                            android:layout_width="15dp"
+                            android:layout_height="match_parent"
+                            android:src="@drawable/check_green"
+                            />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginRight="@dimen/gap_height"
+                        android:layout_marginLeft="@dimen/gap_height">
+                        <ImageView
+                            android:layout_width="25dp"
+                            android:layout_height="match_parent"
+                            android:src="@drawable/icon_payment1"
+                            />
+                    </LinearLayout>
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:text="Cash on delivery"
+                        android:textSize="14dp"
+                        android:textColor="@color/text_color"
+                        android:gravity="center"
+                        android:layout_alignParentRight="true"/>
+
+                </LinearLayout>
+                <LinearLayout
+                    android:id="@+id/reservation_bottom_ch2"
+                    android:layout_width="match_parent"
+                    android:layout_height="20dp"
+                    android:layout_marginBottom="10dp">
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent">
+                        <ImageView
+                            android:id="@+id/reservation_bottom_img2"
+                            android:layout_width="15dp"
+                            android:layout_height="match_parent"
+                            android:src="@drawable/check_green"
+                            />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginRight="@dimen/gap_height"
+                        android:layout_marginLeft="@dimen/gap_height">
+                        <ImageView
+                            android:layout_width="25dp"
+                            android:layout_height="match_parent"
+                            android:src="@drawable/icon_payment2"
+                            />
+                    </LinearLayout>
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:text="Cash on delivery"
+                        android:textSize="14dp"
+                        android:textColor="@color/text_color"
+                        android:gravity="center"
+                        android:layout_alignParentRight="true"/>
+
+                </LinearLayout>
+                <LinearLayout
+                    android:id="@+id/reservation_bottom_ch3"
+                    android:layout_width="match_parent"
+                    android:layout_height="20dp"
+                    android:layout_marginBottom="10dp">
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent">
+                        <ImageView
+                            android:id="@+id/reservation_bottom_img3"
+                            android:layout_width="15dp"
+                            android:layout_height="match_parent"
+                            android:src="@drawable/check_green"
+                            />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginRight="@dimen/gap_height"
+                        android:layout_marginLeft="@dimen/gap_height">
+                        <ImageView
+                            android:layout_width="25dp"
+                            android:layout_height="match_parent"
+                            android:src="@drawable/icon_payment3"
+                            />
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:text="Cash on delivery"
+                        android:textSize="14dp"
+                        android:gravity="center"
+                        android:textColor="@color/text_color"
+                        android:layout_alignParentRight="true"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/reservation_checkout_place_order"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/button_height"
+                android:background="@drawable/btn_red"
+                android:layout_margin="@dimen/gap_height"
+                >
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="PROCEED TO CHECKOUT"
+                    android:textColor="@android:color/white"
+                    android:textSize="@dimen/text_size"
+                    android:gravity="center"/>
+            </LinearLayout>
+        </LinearLayout>
+
+    </ScrollView>
+</RelativeLayout>

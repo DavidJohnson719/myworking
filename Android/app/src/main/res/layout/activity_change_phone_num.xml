@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    tools:context="mataam.com.mataam.ChangePhoneNumActivity">
+
+
+
+    <RelativeLayout
+        android:id="@+id/change_pwd_topView"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/title_bar_height"
+        android:background="@color/colorGreen"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Change Phone Number"
+            android:textColor="@android:color/white"
+            android:textSize="17dp"
+            android:gravity="center"/>
+        <LinearLayout
+            android:id="@+id/phone_back"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:layout_marginLeft="@dimen/gap_height">
+
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:src="@drawable/back3x"
+                android:scaleType="fitCenter"/>
+        </LinearLayout>
+
+
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/change_pwd_topView"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:weightSum="3"
+            android:orientation="vertical"
+            android:layout_margin="@dimen/gap_height"
+            >
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:text="Enter Phone Number*"
+                android:textColor="@color/text_color"
+                android:textSize="@dimen/text_size"/>
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="2"
+                android:background="@drawable/empty"
+                android:text=""
+                android:textColor="@color/text_color"
+                android:textSize="@dimen/text_size"
+                android:paddingLeft="@dimen/gap_height"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:weightSum="3"
+            android:orientation="vertical"
+            android:layout_margin="@dimen/gap_height"
+            >
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:text="Enter Password*"
+                android:textColor="@color/text_color"
+                android:textSize="@dimen/text_size"/>
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="2"
+                android:background="@drawable/empty"
+                android:hint="Name LastName"
+                android:textColor="@color/text_color"
+                android:textSize="@dimen/text_size"
+                android:paddingLeft="@dimen/gap_height"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:weightSum="3"
+            android:orientation="vertical"
+            android:layout_margin="@dimen/gap_height"
+            >
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:text="Confirm Password*"
+                android:textColor="@color/text_color"
+                android:textSize="@dimen/text_size"/>
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="2"
+                android:background="@drawable/empty"
+                android:hint="Name LastName"
+                android:textColor="@color/text_color"
+                android:textSize="@dimen/text_size"
+                android:paddingLeft="@dimen/gap_height"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/info_bottom_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_alignParentBottom="true">
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/button_height"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginBottom="15dp"
+            android:background="@drawable/btn_login">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Apply"
+                android:textColor="@android:color/white"
+                android:textSize="16dp"
+                android:gravity="center"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/button_height"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginBottom="15dp"
+            android:background="@color/btn_cancel_color">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Cancel"
+                android:textColor="@android:color/white"
+                android:textSize="16dp"
+                android:gravity="center"/>
+        </LinearLayout>
+    </LinearLayout>
+    
+</RelativeLayout>

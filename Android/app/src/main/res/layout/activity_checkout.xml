@@ -1,0 +1,849 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_color"
+    tools:context="mataam.com.mataam.CheckoutActivity">
+
+    <RelativeLayout
+        android:id="@+id/checkout_topView"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/title_bar_height"
+        android:background="@color/colorGreen"
+        >
+        <TextView
+            android:id="@+id/checkout_top_title"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Checkout"
+            android:textSize="17dp"
+            android:fontFamily="sans-serif-medium"
+            android:textColor="@android:color/white"
+            android:gravity="center"
+            />
+
+        <LinearLayout
+            android:id="@+id/checkout_back"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:paddingLeft="15dp"
+            android:paddingRight="@dimen/gap_height"
+            android:gravity="center">
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:src="@drawable/back3x"/>
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/checkout_topView">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="2"
+                android:layout_margin="@dimen/gap_height">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:id="@+id/top_ch1"
+                        android:layout_width="match_parent"
+                        android:layout_height="20dp"
+                        android:gravity="center_vertical"
+                        android:layout_marginBottom="@dimen/gap_height">
+
+                        <ImageView
+                            android:id="@+id/top_img1"
+                            android:layout_width="15dp"
+                            android:layout_height="15dp"
+                            android:src="@drawable/check_green" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="@dimen/gap_height"
+                            android:gravity="center_vertical"
+                            android:text="Redeem Coupon"
+                            android:textColor="@color/text_color"
+                            android:textSize="14dp"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/top_ch2"
+                        android:layout_width="match_parent"
+                        android:layout_height="20dp"
+                        android:gravity="center_vertical"
+                        android:layout_marginBottom="@dimen/gap_height">
+
+                        <ImageView
+                            android:id="@+id/top_img2"
+                            android:layout_width="15dp"
+                            android:layout_height="15dp"
+                            android:src="@drawable/check_green" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="@dimen/gap_height"
+                            android:gravity="center_vertical"
+                            android:text="Loyalty Points"
+                            android:textColor="@color/text_color"
+                            android:textSize="14dp"/>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:id="@+id/top_ch3"
+                        android:layout_width="match_parent"
+                        android:layout_height="20dp"
+                        android:gravity="center_vertical"
+                        android:layout_marginBottom="@dimen/gap_height">
+
+                        <ImageView
+                            android:id="@+id/top_img3"
+                            android:layout_width="15dp"
+                            android:layout_height="15dp"
+                            android:src="@drawable/check_green" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="@dimen/gap_height"
+                            android:gravity="center_vertical"
+                            android:text="Mataam Points"
+                            android:textColor="@color/text_color"
+                            android:textSize="14dp"/>
+                    </LinearLayout>
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:weightSum="2"
+                    android:orientation="vertical"
+                    android:layout_marginLeft="@dimen/gap_height"
+                    android:layout_marginBottom="@dimen/gap_height"
+                    >
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+
+                        android:layout_marginBottom="@dimen/gap_height"
+                        >
+                        <EditText
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:hint="Insert coupon code"
+                            android:textSize="@dimen/text_size"
+                            android:textColor="@color/text_color"
+                            android:gravity="center"
+                            android:background="@drawable/corner_radius"
+                            />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:background="@color/btn_cancel_color"
+
+                        >
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:text="APPLY"
+                            android:textSize="@dimen/text_size"
+                            android:textStyle="bold"
+                            android:textColor="@android:color/white"
+                            android:background="@drawable/corner_radius_gray"
+                            android:gravity="center"
+                            />
+                    </LinearLayout>
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:layout_marginLeft="@dimen/gap_height"
+                android:layout_marginRight="@dimen/gap_height"
+                android:weightSum="2"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:id="@+id/bg_temp_clr"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@color/colorOrange"
+                    android:orientation="vertical"
+                    android:layout_marginRight="15dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_margin="1dp"
+                        android:background="@android:color/white"
+                        android:weightSum="3"
+                        android:orientation="vertical"
+                        >
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="1"
+                            android:text="Loyalty Points:"
+                            android:textSize="@dimen/text_size"
+                            android:textColor="@color/colorOrange"
+                            android:background="@android:color/white"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginTop="5dp"/>
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="1"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginRight="5dp">
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:text="Gained/Used"
+                                android:textSize="10dp"
+                                android:textColor="@color/colorOrange"/>
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:text="35pt."
+                                android:textSize="10dp"
+                                android:textColor="@color/colorOrange"
+                                android:layout_alignParentRight="true"/>
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="1"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginRight="5dp">
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:text="Balance"
+                                android:textSize="10dp"
+                                android:textColor="@color/colorOrange"/>
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:text="35pt."
+                                android:textSize="10dp"
+                                android:textColor="@color/colorOrange"
+                                android:layout_alignParentRight="true"/>
+                        </RelativeLayout>
+                    </LinearLayout>
+
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@color/colorOrange"
+                    android:orientation="vertical"
+                    >
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_margin="1dp"
+                        android:background="@android:color/white"
+                        android:weightSum="3"
+                        android:orientation="vertical"
+                        >
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="1"
+                            android:text="Mataam Points:"
+                            android:textSize="@dimen/text_size"
+                            android:textColor="@color/colorOrange"
+                            android:background="@android:color/white"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginTop="5dp"/>
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="1"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginRight="5dp">
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:text="Gained/Used"
+                                android:textSize="10dp"
+                                android:textColor="@color/colorOrange"/>
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:text="35pt."
+                                android:textSize="10dp"
+                                android:textColor="@color/colorOrange"
+                                android:layout_alignParentRight="true"/>
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="1"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginRight="5dp">
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:text="Balance"
+                                android:textSize="10dp"
+                                android:textColor="@color/colorOrange"/>
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:text="35pt."
+                                android:textSize="10dp"
+                                android:textColor="@color/colorOrange"
+                                android:layout_alignParentRight="true"/>
+                        </RelativeLayout>
+                    </LinearLayout>
+
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="@dimen/gap_height"
+                android:layout_marginBottom="@dimen/gap_height"
+                android:background="@drawable/line1"></LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                >
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="20dp"
+                    android:layout_marginLeft="@dimen/gap_height"
+                    android:layout_marginRight="@dimen/gap_height">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:text="Delivery Address:"
+                        android:textSize="@dimen/text_size"
+                        android:textColor="@color/text_color"
+                        />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentRight="true"
+                        android:text="ADD ADDRESS"
+                        android:textColor="@color/colorGreen"/>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_margin="@dimen/gap_height">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:text="Address One (home)"
+                        android:textSize="14dp"
+                        android:textColor="@color/text_color"
+                        android:gravity="center"/>
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:layout_alignParentRight="true">
+                        <ImageView
+                            android:layout_width="15dp"
+                            android:layout_height="15dp"
+                            android:src="@drawable/directbottomb3x"
+                            />
+                    </LinearLayout>
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@drawable/line1"
+                android:layout_marginBottom="@dimen/gap_height"></LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                >
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="20dp"
+                    android:layout_marginLeft="@dimen/gap_height"
+                    android:layout_marginRight="@dimen/gap_height">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:text="Delivery Time:"
+                        android:textSize="@dimen/text_size"
+                        android:textColor="@color/text_color"
+                        />
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:layout_marginLeft="@dimen/gap_height"
+                    android:layout_marginRight="@dimen/gap_height"
+                    android:orientation="horizontal">
+                    <LinearLayout
+                        android:id="@+id/medium_ch1"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical">
+
+                        <ImageView
+                            android:id="@+id/medium_img1"
+                            android:layout_width="15dp"
+                            android:layout_height="15dp"
+                            android:src="@drawable/check_green" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="@dimen/gap_height"
+                            android:gravity="center_vertical"
+                            android:textSize="@dimen/text_size"
+                            android:textColor="@color/text_color"
+                            android:text="Now" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/medium_ch2"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical"
+                        android:layout_marginLeft="@dimen/gap_height">
+
+                        <ImageView
+                            android:id="@+id/medium_img2"
+                            android:layout_width="15dp"
+                            android:layout_height="15dp"
+                            android:src="@drawable/check_green"/>
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:gravity="center_vertical"
+                            android:text="Pre-order for later"
+                            android:textSize="@dimen/text_size"
+                            android:textColor="@color/text_color"
+                            android:layout_marginLeft="@dimen/gap_height"/>
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:layout_marginLeft="@dimen/gap_height"
+                    android:layout_marginRight="@dimen/gap_height"
+                    android:orientation="horizontal"
+                    android:weightSum="2">
+                    <RelativeLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@drawable/btn_gray"
+                        android:layout_marginRight="@dimen/gap_height">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+                            android:layout_marginLeft="10dp"
+                            >
+                            <ImageView
+                                android:layout_width="15dp"
+                                android:layout_height="15dp"
+                                android:src="@drawable/date3x"/>
+
+                        </LinearLayout>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:text="16 feb"
+                            android:gravity="center"
+                            android:textColor="@color/cuisine_search_txt_color"
+                            android:textSize="@dimen/text_size"
+
+                            />
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+                            android:layout_marginRight="5dp"
+                            android:layout_alignParentRight="true"
+                            >
+                            <ImageView
+                                android:layout_width="15dp"
+                                android:layout_height="15dp"
+                                android:src="@drawable/directbottomb3x"/>
+
+                        </LinearLayout>
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@drawable/btn_gray"
+                        >
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+                            android:layout_marginLeft="10dp"
+                            >
+                            <ImageView
+                                android:layout_width="15dp"
+                                android:layout_height="15dp"
+                                android:src="@drawable/time3x"/>
+
+                        </LinearLayout>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:text="18:30"
+                            android:gravity="center"
+                            android:textColor="@color/cuisine_search_txt_color"
+                            android:textSize="@dimen/text_size"
+                            />
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+                            android:layout_marginRight="5dp"
+                            android:layout_alignParentRight="true"
+                            >
+                            <ImageView
+                                android:layout_width="15dp"
+                                android:layout_height="15dp"
+                                android:src="@drawable/directbottomb3x"/>
+
+                        </LinearLayout>
+                    </RelativeLayout>
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@drawable/line1"
+                android:layout_marginTop="@dimen/gap_height"
+                android:layout_marginBottom="@dimen/gap_height"></LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/gap_height"
+                android:layout_marginRight="@dimen/gap_height"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="20dp"
+                    android:text="Leave a note for restaurant:"
+                    android:textSize="@dimen/text_size"
+                    android:textColor="@color/text_color"
+                    android:gravity="center"
+                    />
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="56dp"
+                    android:textSize="@dimen/text_size"
+                    android:textColor="@color/text_color"
+                    android:hint="eg. if you have a food allergy or a request for driver."
+                    android:background="@drawable/empty"
+                    android:paddingLeft="5dp"
+                    android:gravity="top"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@drawable/line1"
+                android:layout_marginTop="@dimen/gap_height"
+                android:layout_marginBottom="@dimen/gap_height"></LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/gap_height"
+                android:layout_marginLeft="@dimen/gap_height"
+                android:orientation="vertical"
+                >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="20dp"
+                    android:text="Payment:"
+                    android:textSize="@dimen/text_size"
+                    android:gravity="center"
+                    android:textColor="@color/text_color"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"/>
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="20dp">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:text="Subtotal:"
+                        android:textColor="@color/text_color"
+                        android:textSize="@dimen/text_size"
+                        android:gravity="center"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:text="KD 5.750"
+                        android:textColor="@color/text_color"
+                        android:textSize="@dimen/text_size"
+                        android:gravity="center"
+                        android:layout_alignParentRight="true"/>
+
+                </RelativeLayout>
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="20dp">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:text="Delivery Fee:"
+                        android:textSize="@dimen/text_size"
+                        android:textColor="@color/text_color"
+                        android:gravity="center"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:text="KD 0.570"
+                        android:textSize="@dimen/text_size"
+                        android:textColor="@color/text_color"
+                        android:gravity="center"
+                        android:layout_alignParentRight="true"/>
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:text="Total amount:"
+                        android:textColor="@color/text_color"
+                        android:textSize="16dp"
+                        android:gravity="center"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:text="KD 6.250"
+                        android:textSize="16dp"
+                        android:textColor="@color/text_color"
+                        android:gravity="center"
+                        android:layout_alignParentRight="true"/>
+
+                </RelativeLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/gap_height"
+                android:layout_marginLeft="@dimen/gap_height"
+                android:orientation="vertical"
+                >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="20dp"
+                    android:text="Payment method:"
+                    android:textSize="@dimen/text_size"
+                    android:textColor="@color/text_color"
+                    android:gravity="center"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"/>
+                <LinearLayout
+                    android:id="@+id/bottom_ch1"
+                    android:layout_width="match_parent"
+                    android:layout_height="20dp"
+                    android:layout_marginBottom="10dp">
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent">
+                        <ImageView
+                            android:id="@+id/bottom_img1"
+                            android:layout_width="15dp"
+                            android:layout_height="match_parent"
+                            android:src="@drawable/check_green"
+                            />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginRight="@dimen/gap_height"
+                        android:layout_marginLeft="@dimen/gap_height">
+                        <ImageView
+                            android:layout_width="25dp"
+                            android:layout_height="match_parent"
+                            android:src="@drawable/icon_payment1"
+                            />
+                    </LinearLayout>
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:text="Cash on delivery"
+                        android:textSize="14dp"
+                        android:gravity="center"
+                        android:textColor="@color/text_color"
+                        android:layout_alignParentRight="true"/>
+
+                </LinearLayout>
+                <LinearLayout
+                    android:id="@+id/bottom_ch2"
+                    android:layout_width="match_parent"
+                    android:layout_height="20dp"
+                    android:layout_marginBottom="10dp">
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent">
+                        <ImageView
+                            android:id="@+id/bottom_img2"
+                            android:layout_width="15dp"
+                            android:layout_height="match_parent"
+                            android:src="@drawable/check_green"
+                            />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginRight="@dimen/gap_height"
+                        android:layout_marginLeft="@dimen/gap_height">
+                        <ImageView
+                            android:layout_width="25dp"
+                            android:layout_height="match_parent"
+                            android:src="@drawable/icon_payment2"
+                            />
+                    </LinearLayout>
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:text="Cash on delivery"
+                        android:textSize="14dp"
+                        android:gravity="center"
+                        android:textColor="@color/text_color"
+                        android:layout_alignParentRight="true"/>
+
+                </LinearLayout>
+                <LinearLayout
+                    android:id="@+id/bottom_ch3"
+                    android:layout_width="match_parent"
+                    android:layout_height="20dp"
+                    android:layout_marginBottom="10dp">
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent">
+                        <ImageView
+                            android:id="@+id/bottom_img3"
+                            android:layout_width="15dp"
+                            android:layout_height="match_parent"
+                            android:src="@drawable/check_green"
+                            />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginRight="@dimen/gap_height"
+                        android:layout_marginLeft="@dimen/gap_height">
+                        <ImageView
+                            android:layout_width="25dp"
+                            android:layout_height="match_parent"
+                            android:src="@drawable/icon_payment3"
+                            />
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:text="Cash on delivery"
+                        android:textSize="14dp"
+                        android:textColor="@color/text_color"
+                        android:gravity="center"
+                        android:layout_alignParentRight="true"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <RelativeLayout
+                android:id="@+id/checkout_place_order"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/button_height"
+                android:layout_margin="@dimen/gap_height"
+                >
+                <ImageView
+                    android:id="@+id/checkout_bottom_bg"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/btn_green"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="PLACE ORDER"
+                    android:textColor="@android:color/white"
+                    android:textSize="@dimen/text_size"
+                    android:gravity="center"/>
+            </RelativeLayout>
+        </LinearLayout>
+
+    </ScrollView>
+</RelativeLayout>

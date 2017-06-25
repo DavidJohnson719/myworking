@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="35dp"
+    android:orientation="vertical"
+    >
+
+    <TextView
+        android:id="@+id/cell_info_txt_main"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:text="Minimum Order Amount"
+        android:textSize="@dimen/text_size"
+        android:textColor="@color/text_color"
+        android:gravity="center"
+       />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_alignParentRight="true">
+        <TextView
+            android:id="@+id/cell_info_txt_sub"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="KD 0.00"
+            android:textSize="@dimen/text_size"
+            android:gravity="center"
+            android:textColor="@color/text_color"
+            android:textStyle="bold"
+            android:layout_alignParentRight="true"
+            />
+
+        <LinearLayout
+            android:id="@+id/cell_normal_lv_img"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:layout_marginLeft="@dimen/gap_height"
+            >
+            <ImageView
+                android:id="@+id/cell_info_img1"
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:layout_marginRight="5dp"
+                android:src="@drawable/small_combined_shape_blue"/>
+            <ImageView
+                android:id="@+id/cell_info_img2"
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:layout_marginRight="5dp"
+                android:src="@drawable/small_combined_shape_blue"/>
+            <ImageView
+                android:id="@+id/cell_info_img3"
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:src="@drawable/small_combined_shape_blue"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

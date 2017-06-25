@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/filter_bg_color"
+    tools:context="mataam.com.mataam.DeliveryPaymentActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_margin="@dimen/gap_height"
+            android:background="@android:color/transparent"
+            >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/title_bar_height"
+                android:background="@drawable/dialog_topview">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:textColor="@android:color/black"
+                    android:textSize="@dimen/text_size"
+                    android:textStyle="bold"
+                    android:text="Chicken Kickers:"
+                    android:layout_marginLeft="@dimen/gap_height"
+                    android:gravity="center_vertical|left"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:textColor="@android:color/black"
+                    android:textSize="@dimen/text_size"
+                    android:textStyle="bold"
+                    android:text="KD 4.500"
+                    android:layout_marginRight="@dimen/gap_height"
+                    android:gravity="center_vertical|left"
+                    android:layout_alignParentRight="true"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@android:color/black"
+                    android:layout_alignParentBottom="true"></LinearLayout>
+
+            </RelativeLayout>
+
+            <ListView
+                android:id="@+id/cell_pay_list"
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                android:background="@drawable/dialog_bg"
+                android:listSelector="@android:color/transparent"
+                android:divider="@android:color/transparent"></ListView>
+
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical">
+
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/button_height">
+            <ImageView
+                android:id="@+id/img_apply_bg"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="fitXY"
+                android:background="@drawable/big_btn_green"
+                android:layout_marginLeft="@dimen/gap_height"
+                android:layout_marginRight="@dimen/gap_height"
+                />
+            <LinearLayout
+                android:id="@+id/cell_pay_lv_apply"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/button_height"
+
+                android:layout_marginLeft="@dimen/gap_height"
+                android:layout_marginRight="@dimen/gap_height"
+                android:gravity="center">
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center">
+                    <ImageView
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:src="@drawable/cart"/>
+                </LinearLayout>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="Add To cart"
+                    android:textSize="@dimen/text_size"
+                    android:textStyle="bold"
+                    android:textColor="@android:color/white"
+                    android:gravity="center"
+                    android:layout_marginLeft="@dimen/gap_height"/>
+            </LinearLayout>
+        </RelativeLayout>
+        <LinearLayout
+            android:id="@+id/cell_pay_lv_cancel"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/button_height"
+            android:background="@drawable/btn_gray"
+            android:layout_margin="@dimen/gap_height">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Cancel"
+                android:textSize="@dimen/text_size"
+                android:textStyle="bold"
+                android:textColor="@android:color/white"
+                android:gravity="center"/>
+        </LinearLayout>
+
+    </LinearLayout>
+</RelativeLayout>

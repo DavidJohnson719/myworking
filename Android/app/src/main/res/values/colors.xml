@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+
+    <color name="colorGreen">#04d400</color>
+    <color name="colorBlue">#00acff</color>
+    <color name="colorOrange">#ff6100</color>
+    <color name="colorRed">#ff0000</color>
+    <color name="text_color">#4a4a4a</color>
+    <color name="background_color">#fcfcfc</color>
+
+    <color name="btn_cancel_color">#d9d9d9</color>
+    <color name="cuisine_top_view_color">#f5f3f3</color>
+    <color name="cuisine_search_txt_color">#9b9b9b</color>
+    <color name="filter_bg_color">#cc000000</color>
+    <color name="menu_bg_color">#4a4a4a</color>
+
+</resources>

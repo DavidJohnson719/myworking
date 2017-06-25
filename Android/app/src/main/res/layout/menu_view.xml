@@ -1,0 +1,524 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/menu_bg_color">
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:layout_marginTop="@dimen/gap_height"
+                android:gravity="center_vertical">
+
+                <LinearLayout
+                    android:id="@+id/menu_lv_close"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center">
+                    <ImageView
+
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:src="@drawable/cross"
+                        android:layout_marginRight="@dimen/gap_height"
+                        android:layout_marginLeft="@dimen/gap_height"/>
+                </LinearLayout>
+
+
+                <ImageView
+                    android:layout_width="180dp"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/menu_logo"
+                    android:layout_margin="5dp"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:gravity="center_vertical"
+                android:layout_marginLeft="@dimen/gap_height">
+
+                <ImageView
+                    android:id="@+id/img_main"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:src="@drawable/temp1"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="@dimen/gap_height"
+                    android:weightSum="2"
+                    android:orientation="vertical"
+                    >
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:textColor="@android:color/white"
+                        android:text="Welcome back,"
+                        android:textSize="14dp"
+                        android:gravity="bottom"/>
+                    <TextView
+                        android:id="@+id/txt_user_name"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:textColor="@android:color/white"
+                        android:text="User Name"
+                        android:textSize="18dp"/>
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <RelativeLayout
+                android:id="@+id/re_home"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_marginLeft="@dimen/gap_height"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="5dp"
+                >
+                <LinearLayout
+                    android:id="@+id/lv_home"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center">
+                    <ImageView
+                        android:id="@+id/menu_img_home"
+                        android:layout_width="15dp"
+                        android:layout_height="15dp"
+                        android:src="@drawable/icon_home"
+                        />
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:text="HOME"
+                    android:textStyle="bold"
+                    android:textColor="@android:color/white"
+                    android:textSize="14dp"
+                    android:paddingLeft="@dimen/gap_height"
+                    android:layout_toRightOf="@+id/lv_home"
+                    android:layout_toLeftOf="@+id/lv_home_dir"
+                   />
+
+                <LinearLayout
+                    android:id="@+id/lv_home_dir"
+                    android:layout_width="20dp"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="-3dp">
+                    <ImageView
+                        android:id="@+id/menu_img_home_dir"
+                        android:layout_width="16dp"
+                        android:layout_height="16dp"
+                        android:src="@drawable/triangle"/>
+                </LinearLayout>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/re_orders"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_marginLeft="@dimen/gap_height"
+                android:layout_marginBottom="5dp"
+                >
+                <LinearLayout
+                    android:id="@+id/lv_order"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center">
+                    <ImageView
+                        android:id="@+id/menu_img_order"
+                        android:layout_width="15dp"
+                        android:layout_height="15dp"
+                        android:src="@drawable/icon_order"
+                        />
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:text="MY ORDERS"
+                    android:textStyle="bold"
+                    android:textColor="@android:color/white"
+                    android:textSize="14dp"
+                    android:paddingLeft="@dimen/gap_height"
+                    android:layout_toRightOf="@+id/lv_order"
+                    android:layout_toLeftOf="@+id/lv_order_dir"
+                    />
+
+                <LinearLayout
+                    android:id="@+id/lv_order_dir"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:layout_alignParentRight="true">
+                    <ImageView
+                        android:id="@+id/menu_img_order_dir"
+                        android:layout_width="15dp"
+                        android:layout_height="15dp"
+                        android:src="@drawable/triangle"
+                        android:visibility="gone"/>
+                </LinearLayout>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/re_reservations"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_marginLeft="@dimen/gap_height"
+                android:layout_marginBottom="5dp"
+                >
+                <LinearLayout
+                    android:id="@+id/lv_reservation"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center">
+                    <ImageView
+                        android:id="@+id/menu_img_reservation"
+                        android:layout_width="15dp"
+                        android:layout_height="15dp"
+                        android:src="@drawable/icon_reservation"
+                        />
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:text="MY RESERVATIONS"
+                    android:textColor="@android:color/white"
+                    android:textSize="14dp"
+                    android:textStyle="bold"
+                    android:paddingLeft="@dimen/gap_height"
+                    android:layout_toRightOf="@+id/lv_reservation"
+                    android:layout_toLeftOf="@+id/lv_reservation_dir"
+                    />
+
+                <LinearLayout
+                    android:id="@+id/lv_reservation_dir"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:layout_alignParentRight="true">
+                    <ImageView
+                        android:id="@+id/menu_img_reservation_dir"
+                        android:layout_width="15dp"
+                        android:layout_height="15dp"
+                        android:src="@drawable/triangle"
+                        android:visibility="gone"/>
+                </LinearLayout>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/re_places"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_marginLeft="@dimen/gap_height"
+                android:layout_marginBottom="5dp"
+                >
+                <LinearLayout
+                    android:id="@+id/lv_place"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center">
+                    <ImageView
+                        android:id="@+id/menu_img_place"
+                        android:layout_width="15dp"
+                        android:layout_height="15dp"
+                        android:src="@drawable/icon_place"
+                        />
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:text="MY PLACES"
+                    android:textColor="@android:color/white"
+                    android:textSize="14dp"
+                    android:textStyle="bold"
+                    android:paddingLeft="@dimen/gap_height"
+                    android:layout_toRightOf="@+id/lv_place"
+                    android:layout_toLeftOf="@+id/lv_place_dir"
+                    />
+
+                <LinearLayout
+                    android:id="@+id/lv_place_dir"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:layout_alignParentRight="true">
+                    <ImageView
+                        android:id="@+id/menu_img_place_dir"
+                        android:layout_width="15dp"
+                        android:layout_height="15dp"
+                        android:src="@drawable/triangle"
+                        android:visibility="gone"/>
+                </LinearLayout>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/re_points"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_marginLeft="@dimen/gap_height"
+                android:layout_marginBottom="5dp"
+                >
+                <LinearLayout
+                    android:id="@+id/lv_point"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center">
+                    <ImageView
+                        android:id="@+id/menu_img_point"
+                        android:layout_width="15dp"
+                        android:layout_height="15dp"
+                        android:src="@drawable/icon_point"
+                        />
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:text="MY POINTS"
+                    android:textColor="@android:color/white"
+                    android:textSize="14dp"
+                    android:textStyle="bold"
+                    android:paddingLeft="@dimen/gap_height"
+                    android:layout_toRightOf="@+id/lv_point"
+                    android:layout_toLeftOf="@+id/lv_point_dir"
+                    />
+
+                <LinearLayout
+                    android:id="@+id/lv_point_dir"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:layout_alignParentRight="true">
+                    <ImageView
+                        android:id="@+id/menu_img_point_dir"
+                        android:layout_width="15dp"
+                        android:layout_height="15dp"
+                        android:src="@drawable/triangle"
+                        android:visibility="gone"/>
+                </LinearLayout>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/re_settings"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_marginLeft="@dimen/gap_height"
+                android:layout_marginBottom="5dp"
+                >
+                <LinearLayout
+                    android:id="@+id/lv_setting"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center">
+                    <ImageView
+                        android:id="@+id/menu_img_setting"
+                        android:layout_width="15dp"
+                        android:layout_height="15dp"
+                        android:src="@drawable/icon_setting"
+                        />
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:text="MY SETTINGS"
+                    android:textColor="@android:color/white"
+                    android:textSize="14dp"
+                    android:textStyle="bold"
+                    android:paddingLeft="@dimen/gap_height"
+                    android:layout_toRightOf="@+id/lv_setting"
+                    android:layout_toLeftOf="@+id/lv_setting_dir"
+                    />
+
+                <LinearLayout
+                    android:id="@+id/lv_setting_dir"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:layout_alignParentRight="true">
+                    <ImageView
+                        android:id="@+id/menu_img_setting_dir"
+                        android:layout_width="15dp"
+                        android:layout_height="15dp"
+                        android:src="@drawable/triangle"
+                        android:visibility="gone"/>
+                </LinearLayout>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/re_promotion"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_marginLeft="@dimen/gap_height"
+                android:layout_marginBottom="5dp"
+                >
+                <LinearLayout
+                    android:id="@+id/lv_promotion"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center">
+                    <ImageView
+                        android:id="@+id/menu_img_promotion"
+                        android:layout_width="15dp"
+                        android:layout_height="15dp"
+                        android:src="@drawable/icon_promotion"
+                        />
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:text="PROMOTION"
+                    android:textColor="@android:color/white"
+                    android:textSize="14dp"
+                    android:textStyle="bold"
+                    android:paddingLeft="@dimen/gap_height"
+                    android:layout_alignParentTop="true"
+                    android:layout_toRightOf="@+id/lv_promotion"
+                    android:layout_toEndOf="@+id/lv_promotion" />
+
+                <LinearLayout
+                    android:id="@+id/lv_promotion_dir"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:layout_alignParentRight="true">
+                    <ImageView
+                        android:id="@+id/menu_img_promotion_dir"
+                        android:layout_width="15dp"
+                        android:layout_height="15dp"
+                        android:src="@drawable/triangle"
+                        android:visibility="gone"/>
+                </LinearLayout>
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:layout_marginLeft="@dimen/gap_height"
+                android:layout_marginRight="@dimen/gap_height"
+                android:layout_marginBottom="@dimen/gap_height"
+                android:orientation="vertical"
+                >
+                 <LinearLayout
+                     android:layout_width="match_parent"
+                     android:layout_height="40dp"
+                     android:background="@color/colorOrange"
+                     android:orientation="horizontal"
+                     android:gravity="center">
+                     <ImageView
+                         android:layout_width="20dp"
+                         android:layout_height="20dp"
+                         android:src="@drawable/cart"
+                         android:layout_marginRight="@dimen/gap_height"/>
+                     <TextView
+                         android:layout_width="wrap_content"
+                         android:layout_height="match_parent"
+                         android:text="Your Cart"
+                         android:textSize="@dimen/text_size"
+                         android:textStyle="bold"
+                         android:textColor="@android:color/white"
+                         android:gravity="center"/>
+                 </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@android:color/white"
+                    android:orientation="vertical">
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="25dp"
+                        android:layout_marginLeft="@dimen/gap_height"
+                        android:layout_marginRight="@dimen/gap_height"
+                        android:layout_marginTop="@dimen/gap_height">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:text="Items:"
+                            android:textColor="@color/text_color"
+                            android:textSize="@dimen/text_size"
+                            android:gravity="center"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:text="0"
+                            android:gravity="center"
+                            android:textColor="@color/text_color"
+                            android:textSize="@dimen/text_size"
+                            android:layout_alignParentRight="true"/>
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="25dp"
+                        android:layout_marginLeft="@dimen/gap_height"
+                        android:layout_marginRight="@dimen/gap_height">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:text="Total amount:"
+                            android:textColor="@color/text_color"
+                            android:textSize="@dimen/text_size"
+                            android:gravity="center"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:text="KD 0"
+                            android:textSize="@dimen/text_size"
+                            android:textColor="@color/text_color"
+                            android:gravity="center"
+                            android:layout_alignParentRight="true"/>
+                    </RelativeLayout>
+
+                    <LinearLayout
+                        android:id="@+id/lv_procced"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/button_height"
+                        android:layout_marginLeft="@dimen/gap_height"
+                        android:layout_marginRight="@dimen/gap_height"
+                        android:layout_marginBottom="@dimen/gap_height"
+                        android:background="@drawable/btn_green">
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+                            android:text="PROCEED TO CHECKOUT"
+                            android:textSize="@dimen/text_size"
+                            android:textColor="@android:color/white"/>
+                    </LinearLayout>
+                </LinearLayout>
+
+            </LinearLayout>
+        </LinearLayout>
+
+</LinearLayout>

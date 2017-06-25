@@ -11,7 +11,10 @@ class SearchMainViewController: UIViewController, UIPopoverPresentationControlle
     @IBOutlet weak var btnPickup: UIButton!
     @IBOutlet weak var btnCatering: UIButton!
     
-    
+    @IBOutlet weak var stvDelivery: UIStackView!
+    @IBOutlet weak var stvPickup: UIStackView!
+    @IBOutlet weak var stvReservation: UIStackView!
+    @IBOutlet weak var stvCatering: UIStackView!
     
     
     @IBOutlet weak var cvFoods: UICollectionView!
@@ -73,28 +76,29 @@ class SearchMainViewController: UIViewController, UIPopoverPresentationControlle
 
             case UISwipeGestureRecognizerDirection.down:
 
-                let originFrame = (self.navigationController?.navigationBar.frame.size.height)! + UIApplication.shared.statusBarFrame.height;
-                
-                let rect1 = CGRect(x: self.vTopSearch.frame.origin.x, y: originFrame, width: self.vTopSearch.frame.size.width, height: self.vTopSearch.frame.size.height)
+                let rect1 = CGRect(x: vTopSearch.frame.origin.x, y: CGFloat(topSearchViewOrigin) , width: vTopSearch.frame.size.width, height: vTopSearch.frame.size.height)
                 self.vTopSearch.frame = rect1
                 
-                let rect2 = CGRect(x: self.cvFoods.frame.origin.x, y: self.vTopSearch.frame.origin.y + self.vTopSearch.frame.size.height , width: self.cvFoods.frame.size.width, height: self.cvFoods.frame.size.height)
+                let rect2 = CGRect(x: cvFoods.frame.origin.x, y: CGFloat(searchCollectionViewOrigin) , width: cvFoods.frame.size.width, height: cvFoods.frame.size.height - self.vTopSearch.frame.height + 40)
                 self.cvFoods.frame = rect2
                 
-                let rect3 = CGRect(x: self.tvFoods.frame.origin.x, y: self.vTopSearch.frame.origin.y + self.vTopSearch.frame.size.height , width: self.tvFoods.frame.size.width, height: self.tvFoods.frame.size.height)
+                let rect3 = CGRect(x: tvFoods.frame.origin.x, y: CGFloat(searchTableViewOrigin) , width: tvFoods.frame.size.width, height: tvFoods.frame.size.height - self.vTopSearch.frame.height + 40)
                 self.tvFoods.frame = rect3
-
 
             case UISwipeGestureRecognizerDirection.up:
                 
-                let rect1 = CGRect(x: vTopSearch.frame.origin.x, y: CGFloat(topSearchViewOrigin) , width: vTopSearch.frame.size.width, height: vTopSearch.frame.size.height)
-                self.vTopSearch.frame = rect1
+                let originFrame = (self.navigationController?.navigationBar.frame.size.height)! + UIApplication.shared.statusBarFrame.height;
+                
+                let rect1 = CGRect(x: self.vTopSearch.frame.origin.x, y: -( self.vTopSearch.frame.height - originFrame - 40 ), width: self.vTopSearch.frame.size.width, height: self.vTopSearch.frame.size.height)
 
-                let rect2 = CGRect(x: cvFoods.frame.origin.x, y: CGFloat(searchCollectionViewOrigin) , width: cvFoods.frame.size.width, height: cvFoods.frame.size.height)
+                self.vTopSearch.frame = rect1
+                
+                let rect2 = CGRect(x: self.cvFoods.frame.origin.x, y: CGFloat(topSearchViewOrigin + 40) , width: self.cvFoods.frame.size.width, height: self.cvFoods.frame.size.height + self.vTopSearch.frame.height - 40)
                 self.cvFoods.frame = rect2
                 
-                let rect3 = CGRect(x: tvFoods.frame.origin.x, y: CGFloat(searchTableViewOrigin) , width: tvFoods.frame.size.width, height: tvFoods.frame.size.height)
+                let rect3 = CGRect(x: self.tvFoods.frame.origin.x, y: CGFloat(topSearchViewOrigin + 40) , width: self.tvFoods.frame.size.width, height: self.tvFoods.frame.size.height + self.vTopSearch.frame.height - 40)
                 self.tvFoods.frame = rect3
+
 
             default:
                 break
@@ -119,6 +123,11 @@ class SearchMainViewController: UIViewController, UIPopoverPresentationControlle
             self.btnReservation.setBackgroundImage(UIImage(named: "btnreservgrouped"), for: UIControlState.normal)
             self.btnCatering.setBackgroundImage(UIImage(named: "btncateringgrouped"), for: UIControlState.normal)
             
+            self.stvDelivery.isHidden = false
+            self.stvPickup.isHidden = true
+            self.stvReservation.isHidden = true
+            self.stvCatering.isHidden = true
+            
             self.tvFoods.reloadData()
             self.cvFoods.reloadData()
         case 2:
@@ -128,6 +137,12 @@ class SearchMainViewController: UIViewController, UIPopoverPresentationControlle
             self.btnPickup.setBackgroundImage(UIImage(named: "btnpickupgroupedpress"), for: UIControlState.normal)
             self.btnReservation.setBackgroundImage(UIImage(named: "btnreservgrouped"), for: UIControlState.normal)
             self.btnCatering.setBackgroundImage(UIImage(named: "btncateringgrouped"), for: UIControlState.normal)
+            
+            self.stvDelivery.isHidden = true
+            self.stvPickup.isHidden = false
+            self.stvReservation.isHidden = true
+            self.stvCatering.isHidden = true
+
             
             self.tvFoods.reloadData()
             self.cvFoods.reloadData()
@@ -139,6 +154,12 @@ class SearchMainViewController: UIViewController, UIPopoverPresentationControlle
             self.btnReservation.setBackgroundImage(UIImage(named: "btnreservgroupedpress"), for: UIControlState.normal)
             self.btnCatering.setBackgroundImage(UIImage(named: "btncateringgrouped"), for: UIControlState.normal)
             
+            self.stvDelivery.isHidden = true
+            self.stvPickup.isHidden = true
+            self.stvReservation.isHidden = false
+            self.stvCatering.isHidden = true
+
+            
             self.tvFoods.reloadData()
             self.cvFoods.reloadData()
         case 4:
@@ -148,6 +169,12 @@ class SearchMainViewController: UIViewController, UIPopoverPresentationControlle
             self.btnPickup.setBackgroundImage(UIImage(named: "btnpickupgrouped"), for: UIControlState.normal)
             self.btnReservation.setBackgroundImage(UIImage(named: "btnreservgrouped"), for: UIControlState.normal)
             self.btnCatering.setBackgroundImage(UIImage(named: "btncateringgroupedpress"), for: UIControlState.normal)
+            
+            self.stvDelivery.isHidden = true
+            self.stvPickup.isHidden = true
+            self.stvReservation.isHidden = true
+            self.stvCatering.isHidden = false
+
             
             self.tvFoods.reloadData()
             self.cvFoods.reloadData()
@@ -159,6 +186,12 @@ class SearchMainViewController: UIViewController, UIPopoverPresentationControlle
             self.btnPickup.setBackgroundImage(UIImage(named: "btnpickupgrouped"), for: UIControlState.normal)
             self.btnReservation.setBackgroundImage(UIImage(named: "btnreservgrouped"), for: UIControlState.normal)
             self.btnCatering.setBackgroundImage(UIImage(named: "btncateringgrouped"), for: UIControlState.normal)
+            
+            self.stvDelivery.isHidden = false
+            self.stvPickup.isHidden = true
+            self.stvReservation.isHidden = true
+            self.stvCatering.isHidden = true
+
             
             self.tvFoods.reloadData()
             self.cvFoods.reloadData()
